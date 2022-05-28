@@ -1,6 +1,6 @@
 <template>
   <div class="text-red-500 font-bold">
-    <h1>Arete</h1>
+    <h1>Welcome to Arete</h1>
   </div>
 </template>
 
