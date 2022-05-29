@@ -1,3 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-open text-base font-normal;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  *,
+  *::before,
+  *::after {
+    @apply m-0 p-0 box-border;
+  }
+}
+a.router-link-exact-active {
+  @apply text-blue-900;
+}
+a.route-link.router-link-exact-active {
+  @apply bg-white text-blue-900 p-3 rounded-lg;
+}
+@layer components {
+  .container {
+    @apply w-11/12 md:w-4/5 lg:w-4/5 2xl:max-w-7xl m-auto;
+  }
+  .routes {
+    @apply mt-20;
+  }
+  .contact_btn {
+    @apply font-bold text-white uppercase border border-solid border-gray-400 rounded-md bg-mainBg hover:bg-white hover:text-mainBg transition-all text-sm;
+  }
+  .toggler {
+    @apply w-5 bg-primary h-0.5 mb-1 transition ease-in-out duration-500;
+  }
+  .change .toggler:nth-child(1) {
+    transform: translate(1px, 6px) rotate(45deg);
+  }
+  .change .toggler:nth-child(2) {
+    @apply opacity-0;
+  }
+  .change .toggler:nth-child(3) {
+    transform: translate(0px, -6px) rotate(-45deg);
+  }
+  .label-style {
+    @apply block mb-2 text-gray-600;
+  }
+  .input-style {
+    @apply border-solid border-gray-300 border outline-none rounded-md p-2 focus:border-gray-600 w-full transition-all duration-200 ease-in-out;
+  }
+  .err {
+    @apply border-solid border border-blue-900 mb-2 !important;
+  }
+  .err-message {
+    @apply text-blue-900;
+  }
+  .tag {
+    @apply text-secondary uppercase;
+  }
+  .input-style {
+    @apply bg-white border border-border text-priText text-sm px-5 py-3 rounded-md w-full placeholder-secText;
+  }
+  .btn {
+    @apply transition-all hover:scale-95 duration-300 ease-in-out;
+  }
+}
+@layer utilities {
+  .open {
+    @apply left-0 lg:left-0;
+  }
+  .main-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+  }
+  .other-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.3);
+  }
+  .book {
+    filter: drop-shadow(-15px 30px 3px #dddddd);
+  }
+  .subscribe {
+    background: #00366e;
+    background-image: url('/img/bg-04.png'), url('./img/bg-03.png');
+    background-repeat: no-repeat;
+    background-size: 200px, 300px;
+    background-position: bottom -30px left -20px, top -30px right -20px;
+  }
+}

@@ -1,17 +1,16 @@
 <template>
   <the-header />
-  <about-main />
+  <partner-main />
   <the-footer />
 </template>
 
 <script>
-import AboutMain from "../components/about/AboutMain.vue";
 import TheFooter from "../components/navbar/TheFooter.vue";
 import TheHeader from "../components/navbar/TheHeader.vue";
+import PartnerMain from "../components/patnership/PartnerMain.vue";
 export default {
-  components: { TheHeader, AboutMain, TheFooter },
+  components: { TheHeader, PartnerMain, TheFooter },
 };
 </script>
-,
 
 <style lang="scss" scoped></style>
