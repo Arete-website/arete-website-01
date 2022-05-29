@@ -1,0 +1,110 @@
+<template>
+  <footer class="bg-[#031324] text-white py-8">
+    <div class="container">
+      <div
+        class="flex justify-between items-center flex-col md:flex-row py-8 text-center md:text-left md:text-sm lg:text-lg"
+      >
+        <div
+          class="md:basis-[33.33%] flex justify-center flex-col items-center md:items-start mb-10 md:mb-0"
+        >
+          <router-link :to="{ name: 'home' }" class="font-bold text-2xl mb-8"
+            ><img src="/img/logo.png" alt="logo"
+          /></router-link>
+          <p class="mb-6">
+            Arete is a non-profit that believes in teaching and equipping
+            children with programming and soft skills.
+          </p>
+          <ul class="flex items-center space-x-2 md:basis-[33.33%]">
+            <li
+              class="bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-90 text-primary bg-white"
+              v-for="(social, index) in socials"
+              :key="index"
+            >
+              <a href="#" :class="social.icon" class="text-lg"></a>
+            </li>
+          </ul>
+        </div>
+        <ul
+          class="mb-10 md:mb-0 md:basis-[33.33%] md:grid md:grid-cols-2 xl:grid-cols-3"
+        >
+          <li
+            class="mb-3 capitalize"
+            v-for="(link, index) in links"
+            :key="index"
+          >
+            <a :href="link.route">{{ link.name }}</a>
+          </li>
+        </ul>
+        <ul class="mb-10 md:mb-0">
+          <li class="mb-3">
+            Copyright © {{ getYear }} Arete. <br />
+            All Rights Reserved.
+          </li>
+          <li class="mb-3">
+            <a href="mailto:areteorg7@gmail.com">areteorg7@gmail.com</a>
+          </li>
+          <li class="mb-3">
+            <a href="tel:+2348069398767">+2348069398767</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</template>
+
+<script>
+export default {
+  name: "TheFooter",
+  data() {
+    return {
+      links: [
+        {
+          name: "home",
+          route: "#",
+        },
+        {
+          name: "about",
+          route: "#",
+        },
+        {
+          name: "contact",
+          route: "#",
+        },
+        {
+          name: "FAQ's",
+          route: "#",
+        },
+        {
+          name: "event",
+          route: "#",
+        },
+        {
+          name: "donate",
+          route: "#",
+        },
+      ],
+      socials: [
+        {
+          icon: "mdi mdi-facebook",
+        },
+        {
+          icon: "mdi mdi-twitter",
+        },
+        {
+          icon: "mdi mdi-instagram",
+        },
+        {
+          icon: "mdi mdi-linkedin",
+        },
+      ],
+    };
+  },
+  computed: {
+    getYear() {
+      return new Date().getFullYear();
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped></style>

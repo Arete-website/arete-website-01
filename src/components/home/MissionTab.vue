@@ -1,6 +1,6 @@
 <template>
-  <div class="text-red-500 font-bold">
-    <h1>Welcome to Arete</h1>
+  <div>
+    To turn a generation of computer illiterates into a digitalized nation.
   </div>
 </template>
 
