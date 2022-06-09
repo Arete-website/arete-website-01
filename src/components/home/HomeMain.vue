@@ -10,6 +10,7 @@
       </h1>
       <button
         class="bg-primary text-white rounded-md px-12 py-4 mt-10 font-semibold btn md:w-[200px]"
+        @click="$router.push({ name: 'about' })"
       >
         Learn More
       </button>

@@ -3,22 +3,25 @@
     <div class="container">
       <div class="md:flex justify-between items-center md:space-x-8">
         <div
-          class="bg-white rounded-md p-6 basis-1/2 mb-8 md:mb-0 lg:h-[400px] lg:basis-[480px] 1xl:basis-[600px]"
+          class="bg-white rounded-md p-6 basis-1/2 mb-8 md:mb-0 lg:h-[500px] lg:basis-[600px] 1xl:basis-[681px] lg:p-14"
           data-aos="fade"
         >
-          <h2 class="text-primary font-bold text-xl lg:text-3xl mb-4">
-            Who Are We?
-          </h2>
-          <p class="mb-6">
-            Arete, founded in 2019, is a non-profit organization, focusing on
-            educating children and young people in tech and supporting their
-            journeys through the Arete Bursary.
-          </p>
-          <p>
-            We believe that equipping children and young people with technical
-            and soft skills bridges the technological gap between our society
-            and the global community.
-          </p>
+          <div class="1xl:w-[544px] m-auto">
+            <h2 class="text-primary font-bold text-xl lg:text-3xl mb-4">
+              Who Are We?
+            </h2>
+            <p class="mb-6">
+              Arete, founded in 2019, is a non-profit organization, focusing on
+              educating children and young people in tech and supporting their
+              journeys through the Arete Bursary.
+            </p>
+            <p>
+              We believe that equipping children and young people with technical
+              and soft skills bridges the technological gap between our society
+              and the global community.
+            </p>
+          </div>
+          <px class=""></px>
         </div>
         <ul class="basis-1/2 lg:basis-[480px] 1xl:basis-[480px]">
           <li v-for="who in whos" :key="who" class="pt-1" data-aos="zoom-in">

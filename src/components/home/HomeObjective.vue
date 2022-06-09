@@ -1,7 +1,7 @@
 <template>
   <div class="py-16 text-[#0A1F35]">
     <div class="container">
-      <div class="xl:w-[950px] m-auto text-center" data-aos="fade">
+      <div class="xl:w-[1000px] m-auto text-center" data-aos="fade">
         <h3 class="font-bold text-xl lg:text-3xl mb-6">Our Objectives</h3>
         <p class="lg:text-lg">
           We believe that teaching and equipping children with programming and
@@ -29,7 +29,12 @@
             class="absolute bottom-0 left-0 w-full bg-[rgba(3,19,36,0.84)] flex justify-between items-center text-white p-3"
           >
             <p class="font-bold lg:text-lg">{{ objective.title }}</p>
-            <button class="border-none outline-none bg-none">View Event</button>
+            <a
+              :href="objective.link"
+              target="_blank"
+              class="border-none outline-none bg-none"
+              >View Event</a
+            >
           </div>
         </div>
       </div>
@@ -45,10 +50,12 @@ export default {
         {
           src: "obj-01.png",
           title: "Journey down the Street",
+          link: "https://photos.app.goo.gl/rXvagd7m5Djw1uKL9",
         },
         {
           src: "obj-02.png",
-          title: "July Bootcamp",
+          title: "Collaboration with Lahfa",
+          link: "https://photos.app.goo.gl/FYk4S2z7Uh3wA7TB6",
         },
       ],
     };

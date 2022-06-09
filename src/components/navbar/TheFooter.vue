@@ -1,15 +1,17 @@
 <template>
   <footer class="bg-[#031324] text-white py-8">
     <div class="container">
+      <div class="flex justify-center items-center md:justify-start">
+        <router-link :to="{ name: 'home' }" class="font-bold text-2xl mb-8"
+          ><img src="/img/logo.png" alt="logo"
+        /></router-link>
+      </div>
       <div
-        class="flex justify-between items-center flex-col md:flex-row py-8 text-center md:text-left md:text-sm lg:text-lg"
+        class="flex justify-between items-center md:items-start flex-col md:flex-row py-8 text-center md:text-left md:text-sm lg:text-lg"
       >
         <div
           class="md:basis-[33.33%] flex justify-center flex-col items-center md:items-start mb-10 md:mb-0"
         >
-          <router-link :to="{ name: 'home' }" class="font-bold text-2xl mb-8"
-            ><img src="/img/logo.png" alt="logo"
-          /></router-link>
           <p class="mb-6">
             Arete is a non-profit that believes in teaching and equipping
             children with programming and soft skills.
@@ -28,7 +30,7 @@
           class="mb-10 md:mb-0 md:basis-[33.33%] md:grid md:grid-cols-2 xl:grid-cols-3"
         >
           <li
-            class="mb-3 capitalize"
+            class="mb-4 capitalize"
             v-for="(link, index) in links"
             :key="index"
           >
@@ -36,14 +38,14 @@
           </li>
         </ul>
         <ul class="mb-10 md:mb-0">
-          <li class="mb-3">
+          <li class="mb-4">
             Copyright © {{ getYear }} Arete. <br />
             All Rights Reserved.
           </li>
-          <li class="mb-3">
+          <li class="mb-4">
             <a href="mailto:areteorg7@gmail.com">areteorg7@gmail.com</a>
           </li>
-          <li class="mb-3">
+          <li class="mb-4">
             <a href="tel:+2348069398767">+2348069398767</a>
           </li>
         </ul>
@@ -60,11 +62,11 @@ export default {
       links: [
         {
           name: "home",
-          route: "#",
+          route: "/",
         },
         {
           name: "about",
-          route: "#",
+          route: "about",
         },
         {
           name: "contact",
@@ -76,11 +78,11 @@ export default {
         },
         {
           name: "event",
-          route: "#",
+          route: "https://photos.app.goo.gl/rXvagd7m5Djw1uKL9",
         },
         {
           name: "donate",
-          route: "#",
+          route: "https://forms.gle/J7mqEfchsAA1eL3h6",
         },
       ],
       socials: [

@@ -15,13 +15,11 @@
             class="block text-center lg:flex lg:space-x-8 lg:m-0 lg:items-center"
           >
             <li
-              class="mb-4 lg:m-0 mt-10 last:px-4 last:py-4 last:rounded-md last:bg-primary last:text-white last:font-semibold lg:text-lg last:lg:text-base last:w-11/12 last:m-auto last:btn"
+              class="mb-4 lg:m-0 mt-10 last:px-4 last:py-4 last:rounded-md last:bg-primary last:text-white last:font-semibold last:w-11/12 last:m-auto last:btn"
               v-for="(route, index) in routes"
               :key="index"
             >
-              <router-link :to="{ name: route.path }">{{
-                route.name
-              }}</router-link>
+              <a :href="route.path">{{ route.name }}</a>
             </li>
           </ul>
         </nav>
@@ -47,22 +45,15 @@ export default {
       routes: [
         {
           name: "volunteer",
-          // path: "volunteer",
-          path: "home",
+          path: "#volunteer",
         },
         {
-          name: "bursary",
-          path: "home",
-          // path: "bursary",
+          name: "beneficiaries",
+          path: "https://forms.gle/qwMxqsF6sLfkmpz96",
         },
         {
           name: "partnership",
           path: "partnership",
-        },
-        {
-          name: "donate",
-          path: "home",
-          // path: "donate",
         },
         {
           name: "about",
@@ -70,8 +61,7 @@ export default {
         },
         {
           name: "make a donation",
-          path: "about",
-          // path: "donate",
+          path: "https://forms.gle/J7mqEfchsAA1eL3h6",
         },
       ],
       show: false,

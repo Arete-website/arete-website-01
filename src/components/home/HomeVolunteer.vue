@@ -1,5 +1,5 @@
 <template>
-  <div class="md:grid grid-cols-2 text-white text-center md:text-left">
+  <div class="md:grid grid-cols-2 text-white md:text-left" id="volunteer">
     <div class="relative other-bg">
       <img
         src="/img/illus-02.png"
@@ -9,7 +9,9 @@
     </div>
     <div class="bg-[rgba(3,19,36,1)] basis-1/2 py-8 flex flex-col">
       <div class="container lg:w-[420px]" data-aos="fade">
-        <h5 class="text-xl lg:text-3xl font-bold mb-6">Volunteer with us</h5>
+        <h5 class="text-xl lg:text-3xl font-bold mb-6 text-center md:text-left">
+          Volunteer with us
+        </h5>
         <p class="lg:text-lg">
           “We make a living by what we get, but we make a life by what we give”-
           Winston Churchill
@@ -18,11 +20,13 @@
           Join us in making this good work get to as many people as possible,
           far and wide in record time.
         </p>
-        <button
-          class="bg-white text-primary rounded-md px-12 py-4 mt-12 font-semibold capitalize btn md:w-[200px]"
+        <a
+          href="https://forms.gle/96yLtBpT6jh3ybp68"
+          target="_blank"
+          class="bg-white text-primary rounded-md px-12 py-4 mt-12 font-semibold capitalize btn md:w-[200px] block md:inline-block text-center"
         >
           volunteer
-        </button>
+        </a>
       </div>
     </div>
   </div>
