@@ -5,7 +5,7 @@
     <div class="container">
       <div class="md:flex justify-center items-center md:space-x-8">
         <div class="md:basis-2/5 lg:basis-[450px]" data-aos="zoom-in">
-          <img src="/img/illus-01.png" alt="illus-01" />
+          <img src="/img/illus-01.png" alt="illus-01" class="w-full" />
         </div>
         <div
           class="md:basis-3/5 lg:basis-[500px] text-[rgba(51,51,51,1)] text-center md:text-left"
@@ -17,11 +17,13 @@
             children and youths. With your donation, you can sponsor a child to
             get access to any of our free bootcamps.
           </p>
-          <button
-            class="bg-primary text-white rounded-md px-12 py-4 mt-6 font-semibold capitalize"
+          <a
+            href="https://forms.gle/J7mqEfchsAA1eL3h6"
+            target="_blank"
+            class="bg-primary text-white rounded-md px-12 py-4 mt-6 font-semibold capitalize block md:inline-block text-center"
           >
             Make a donation
-          </button>
+          </a>
         </div>
       </div>
     </div>

@@ -50,15 +50,19 @@
           <div
             class="flex justify-between items-center flex-col space-y-2 xl:flex-row xl:space-y-0 xl:space-x-2 my-6"
           >
-            <button
-              class="bg-primary text-white rounded-md px-12 py-4 font-semibold btn w-full lg:text-sm mb-0 basis-1/2"
+            <a
+              href="https://forms.gle/J7mqEfchsAA1eL3h6"
+              target="_blank"
+              class="bg-primary text-white rounded-md px-12 py-4 font-semibold btn w-full lg:text-sm mb-0 basis-1/2 block md:inline-block text-center"
             >
-              Make a donation</button
-            ><button
-              class="bg-primary text-white rounded-md px-12 py-4 font-semibold btn w-full lg:text-sm basis-1/2"
+              Make a donation</a
+            ><a
+              href="https://forms.gle/J7mqEfchsAA1eL3h6"
+              target="_blank"
+              class="bg-primary text-white rounded-md px-12 py-4 font-semibold btn w-full lg:text-sm basis-1/2 block md:inline-block text-center"
             >
               Request sponsorship
-            </button>
+            </a>
           </div>
         </div>
         <div class="md:basis-1/2">

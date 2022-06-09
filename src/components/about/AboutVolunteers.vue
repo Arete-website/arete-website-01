@@ -12,11 +12,7 @@
             :key="volunteer"
             class="flex justify-between items-center space-y-3 flex-col text-center p-6 rounded-md"
           >
-            <img
-              :src="volunteer.src"
-              :alt="volunteer.name"
-              class="bg-[#F5F9FC] rounded-md"
-            />
+            <img :src="volunteer.src" :alt="volunteer.name" />
             <h4 class="text-base font-bold mb-6">
               {{ volunteer.name }}
             </h4>

@@ -1,6 +1,6 @@
 <template>
   <div class="py-18">
-    <div class="container">
+    <div class="container xl:w-[1100px]">
       <div
         class="bg-[url('/img/bg-01.png')] bg-no-repeat bg-center bg-cover bg-[#031324] px-8 py-12 text-white rounded-md my-10"
         data-aos="fade"
