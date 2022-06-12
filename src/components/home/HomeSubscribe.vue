@@ -20,11 +20,7 @@
             placeholder="Enter your mail"
             class="bg-white text-black p-4 rounded-md placeholder:text-[#333333] w-full md:basis-[70%]"
           />
-          <input
-            type="submit"
-            value="Subscribe"
-            class="bg-transparent border border-white text-white rounded-md p-4 font-semibold btn w-full md:basis-[30%] cursor-pointer mt-4 md:mt-0"
-          />
+          <input type="submit" value="Subscribe" class="submit-btn" />
         </form>
       </div>
     </div>

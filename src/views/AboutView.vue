@@ -1,5 +1,5 @@
 <template>
-  <the-header />
+  <the-header active="about" />
   <about-main />
   <about-content />
   <about-founders />

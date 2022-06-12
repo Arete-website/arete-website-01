@@ -20,7 +20,7 @@
           <a
             href="https://forms.gle/J7mqEfchsAA1eL3h6"
             target="_blank"
-            class="bg-primary text-white rounded-md px-12 py-4 mt-6 font-semibold capitalize block md:inline-block text-center"
+            class="bg-primary text-white rounded-md px-12 py-4 mt-6 font-semibold capitalize block md:inline-block text-center btn"
           >
             Make a donation
           </a>

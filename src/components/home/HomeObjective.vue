@@ -32,7 +32,7 @@
             <a
               :href="objective.link"
               target="_blank"
-              class="border-none outline-none bg-none"
+              class="border-none outline-none bg-none underline-effect"
               >View Event</a
             >
           </div>

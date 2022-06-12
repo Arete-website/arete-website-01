@@ -12,11 +12,15 @@
             :key="volunteer"
             class="flex justify-between items-center space-y-3 flex-col text-center p-6 rounded-md"
           >
-            <img :src="volunteer.src" :alt="volunteer.name" />
+            <img
+              :src="`/img/${volunteer.src}`"
+              :alt="volunteer.name"
+              class="rounded-full w-full md:w-[250px]"
+            />
             <h4 class="text-base font-bold mb-6">
               {{ volunteer.name }}
             </h4>
-            <ul class="grid grid-cols-2 gap-x-2">
+            <ul class="flex justify-center items-center space-x-2">
               <li
                 v-for="social in volunteer.socials"
                 :key="social"
@@ -43,57 +47,53 @@ export default {
     return {
       volunteers: [
         {
-          name: "Mbaoma Chioma M.",
-          src: "https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png",
+          name: "Zion Igwe",
+          src: "avt-01.jpeg",
           socials: [
             {
-              link: "https://twitter.com",
+              link: "https://twitter.com/IgweZion_",
               icon: "mdi mdi-twitter",
             },
             {
-              link: "https://linkedin.com",
+              link: "https://www.linkedin.com/in/zion-igwe-a1b759176",
               icon: "mdi mdi-linkedin",
             },
           ],
         },
         {
-          name: "Jegede Abisola C.",
-          src: "https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png",
+          name: "Abubakar Emmanuella Faridat",
+          src: "avt-02.jpg",
           socials: [
             {
-              link: "https://twitter.com",
+              link: "https://twitter.com/manuellabubakar",
               icon: "mdi mdi-twitter",
             },
             {
-              link: "https://linkedin.com",
+              link: "  https://www.linkedin.com/in/emmanuella-faridat-abubakar/",
               icon: "mdi mdi-linkedin",
             },
           ],
         },
         {
-          name: "Ifihanagbara Oluseye",
-          src: "https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png",
+          name: "Emmanuel Ikpesu",
+          src: "avt-03.jpg",
           socials: [
             {
-              link: "https://twitter.com",
+              link: "  https://twitter.com/IkpesuE?t=xEQLowp7cMhmiBJ_DvPPdA&s=09",
               icon: "mdi mdi-twitter",
-            },
-            {
-              link: "https://linkedin.com",
-              icon: "mdi mdi-linkedin",
             },
           ],
         },
         {
-          name: "Maryann Onuhua C.",
-          src: "https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png",
+          name: "Oche Joshua Onoda",
+          src: "avt-04.jpg",
           socials: [
             {
-              link: "https://twitter.com",
+              link: "https://twitter.com/qingmarcel?t=TQISEjnzqM755OoJoOd2Kw&s=09",
               icon: "mdi mdi-twitter",
             },
             {
-              link: "https://linkedin.com",
+              link: "https://www.linkedin.com/in/oche-onoda-b51735218",
               icon: "mdi mdi-linkedin",
             },
           ],

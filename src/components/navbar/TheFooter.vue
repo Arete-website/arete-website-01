@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-[#031324] text-white py-8">
+  <footer class="bg-[#031324] text-white py-16">
     <div class="container">
       <div class="flex justify-center items-center md:justify-start">
         <router-link :to="{ name: 'home' }" class="font-bold text-2xl mb-8"
@@ -7,7 +7,7 @@
         /></router-link>
       </div>
       <div
-        class="flex justify-between items-center md:items-start flex-col md:flex-row py-8 text-center md:text-left md:text-sm lg:text-lg"
+        class="flex justify-between items-center md:items-start flex-col md:flex-row pt-8 text-center md:text-left md:text-sm lg:text-lg"
       >
         <div
           class="md:basis-[33.33%] flex justify-center flex-col items-center md:items-start mb-10 md:mb-0"
@@ -37,7 +37,7 @@
             <a :href="link.route">{{ link.name }}</a>
           </li>
         </ul>
-        <ul class="mb-10 md:mb-0">
+        <ul>
           <li class="mb-4">
             Copyright © {{ getYear }} Arete. <br />
             All Rights Reserved.
@@ -70,7 +70,7 @@ export default {
         },
         {
           name: "contact",
-          route: "#",
+          route: "/partnership#contact",
         },
         {
           name: "FAQ's",
@@ -88,15 +88,19 @@ export default {
       socials: [
         {
           icon: "mdi mdi-facebook",
+          link: "https://web.facebook.com/arete700",
         },
         {
           icon: "mdi mdi-twitter",
+          link: "https://twitter.com/official_arete",
         },
         {
           icon: "mdi mdi-instagram",
+          link: "https://instagram.com/official_arete",
         },
         {
           icon: "mdi mdi-linkedin",
+          link: "https://www.linkedin.com/in/ar%C3%AAte/",
         },
       ],
     };

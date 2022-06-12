@@ -1,10 +1,10 @@
 <template>
   <div class="bg-white py-16 text-left">
     <div class="container">
-      <h6 class="font-medium text-xl lg:text-3xl mb-10 md:mb-16 text-center">
+      <h6 class="font-bold text-xl lg:text-3xl mb-10 md:mb-16 text-center">
         Get Access To Our Ebook on Microsoft Office Tools
       </h6>
-      <div class="md:flex justify-center items-center md:space-x-10">
+      <div class="md:flex justify-center items-start md:space-x-12">
         <div class="md:basis-3/5 lg:basis-[380px]" data-aos="fade">
           <div class="mb-12">
             <p>
@@ -21,9 +21,7 @@
           <div>
             <p>
               Remember, that the happiest people are not those getting more, buy
-              those giving more.
-              <br />
-              You can also donate an e-book to a child.
+              those giving more. You can also donate an e-book to a child.
             </p>
             <a
               href="https://forms.gle/J7mqEfchsAA1eL3h6"
@@ -34,11 +32,12 @@
             </a>
           </div>
         </div>
-        <div
-          class="md:basis-2/5 lg:basis-[500px] mt-8 md:mt-0"
-          data-aos="zoom-in"
-        >
-          <img src="/img/illus-03.png" alt="illus-03" class="book w-full" />
+        <div class="md:basis-2/5 lg:basis-auto mt-8 md:mt-0" data-aos="zoom-in">
+          <img
+            src="/img/illus-03.png"
+            alt="illus-03"
+            class="book w-full md:w-auto"
+          />
         </div>
       </div>
     </div>
