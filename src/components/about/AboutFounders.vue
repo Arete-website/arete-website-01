@@ -10,13 +10,17 @@
             data-aos="zoom-in"
             v-for="founder in founders"
             :key="founder"
-            class="flex justify-between items-center space-y-3 flex-col text-center p-6 rounded-md"
+            class="flex justify-between items-center space-y-3 flex-col text-center p-6"
           >
-            <img :src="`/img/${founder.src}`" :alt="founder.name" />
+            <img
+              :src="`/img/${founder.src}`"
+              :alt="founder.name"
+              class="rounded-full"
+            />
             <h4 class="text-base font-bold mb-6">
               {{ founder.name }}
             </h4>
-            <ul class="grid grid-cols-2 gap-x-2">
+            <ul class="flex justify-center items-center space-x-2">
               <li
                 v-for="social in founder.socials"
                 :key="social"

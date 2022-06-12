@@ -5,19 +5,22 @@
     <div class="container">
       <div class="flex justify-between items-center">
         <router-link :to="{ name: 'home' }"
-          ><img src="/img/logo.png" alt="logo" class="w-28 h-20 object-contain"
+          ><img src="/img/logo.png" alt="logo" class="w-auto"
         /></router-link>
         <nav
-          class="fixed h-full w-full top-0 -left-full mt-16 bg-white py-8 lg:relative lg:w-auto lg:left-0 lg:m-0 lg:p-0 lg:bg-inherit transition-all duration-500 capitalize font-normal text-primary text-base"
+          class="fixed h-full w-full top-0 -left-full mt-16 bg-white py-8 lg:relative lg:w-auto lg:left-0 lg:m-0 lg:p-0 lg:bg-inherit capitalize font-normal text-primary text-base"
           :class="{ open: show }"
         >
           <ul
             class="block text-center lg:flex lg:space-x-8 lg:m-0 lg:items-center"
           >
             <li
-              class="mb-4 lg:m-0 mt-10 last:px-4 last:py-4 last:rounded-md last:bg-primary last:text-white last:font-semibold last:w-11/12 last:m-auto last:btn"
+              class="mb-4 lg:m-0 mt-10 last:px-4 last:py-4 last:rounded-md last:bg-primary last:text-white last:font-semibold last:w-11/12 last:m-auto last:btn transition-all duration-500 ease-in-out hover:text-[#1d1d1d] underline-effect last:hover:after:w-0 last:hover:text-white"
               v-for="(route, index) in routes"
               :key="index"
+              :class="{
+                'border-b-2 border-b-primary': active === route.path,
+              }"
             >
               <a :href="route.path">{{ route.name }}</a>
             </li>
@@ -40,12 +43,18 @@
 <script>
 export default {
   name: "TheHeader",
+  props: {
+    active: {
+      type: Boolean,
+      default: true,
+    },
+  },
   data() {
     return {
       routes: [
         {
           name: "volunteer",
-          path: "#volunteer",
+          path: "/#volunteer",
         },
         {
           name: "beneficiaries",

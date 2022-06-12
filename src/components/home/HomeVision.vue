@@ -12,13 +12,17 @@
             v-for="vision in visions"
             :key="vision"
             @click="currentTab = vision"
-            class="cursor-pointer"
-            :class="{ 'border-b-4 border-b-primary': currentTab === vision }"
+            class="cursor-pointer transition-all ease-in-out duration-200 hover:border-b-primary text-base lg:text-xl"
+            :class="[
+              currentTab === vision
+                ? 'border-b-4 border-b-primary'
+                : 'border-b-4 border-b-transparent',
+            ]"
           >
             {{ vision }}
           </li>
         </ul>
-        <div class="text-center md:w-[530px] mx-auto mt-10">
+        <div class="text-center md:w-[530px] mx-auto mt-10 lg:text-lg">
           <component :is="currentTab" />
         </div>
       </div>

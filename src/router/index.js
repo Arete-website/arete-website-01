@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import Partnership from "../views/PartnershipView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,10 +19,7 @@ const router = createRouter({
     {
       path: "/partnership",
       name: "partnership",
-      component: () =>
-        import(
-          /* webpackChunkName: "partnership" */ "../views/PartnershipView.vue"
-        ),
+      component: Partnership, // async-load doesn't work on hash (#),
     },
   ],
   scrollBehavior() {
