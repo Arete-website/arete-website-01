@@ -46,8 +46,7 @@ export default {
   name: "TheHeader",
   props: {
     active: {
-      type: Boolean,
-      default: true,
+      type: String,
     },
   },
   data() {
