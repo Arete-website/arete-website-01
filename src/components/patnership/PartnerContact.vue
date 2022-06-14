@@ -32,7 +32,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    contactUs() {},
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

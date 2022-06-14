@@ -15,11 +15,12 @@
             class="block text-center lg:flex lg:space-x-8 lg:m-0 lg:items-center"
           >
             <li
-              class="mb-4 lg:m-0 mt-10 last:px-4 last:py-4 last:rounded-md last:bg-primary last:text-white last:font-semibold last:w-11/12 last:m-auto last:btn transition-all duration-500 ease-in-out hover:text-[#1d1d1d] underline-effect last:hover:after:w-0 last:hover:text-white"
+              class="mb-4 lg:m-0 mt-10 last:px-4 last:py-4 last:rounded-md last:bg-primary last:text-white last:font-semibold last:w-11/12 last:m-auto last:btn transition-all duration-500 ease-in-out hover:text-[#1d1d1d] md:underline-effect last:hover:after:w-0 last:hover:text-white"
               v-for="(route, index) in routes"
               :key="index"
               :class="{
-                'border-b-2 border-b-primary': active === route.path,
+                'text-[#1d1d1d] md:text-current md:border-b-2 border-b-primary':
+                  active === route.path,
               }"
             >
               <a :href="route.path">{{ route.name }}</a>
@@ -45,8 +46,7 @@ export default {
   name: "TheHeader",
   props: {
     active: {
-      type: Boolean,
-      default: true,
+      type: String,
     },
   },
   data() {

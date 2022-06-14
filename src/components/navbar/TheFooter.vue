@@ -22,7 +22,12 @@
               v-for="(social, index) in socials"
               :key="index"
             >
-              <a href="#" :class="social.icon" class="text-lg"></a>
+              <a
+                :href="social.link"
+                target="_blank"
+                :class="social.icon"
+                class="text-lg"
+              ></a>
             </li>
           </ul>
         </div>

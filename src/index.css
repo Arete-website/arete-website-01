@@ -90,7 +90,7 @@
   }
   .subscribe {
     background: #00366e;
-    background-image: url('/img/bg-04.png'), url('./img/bg-03.png');
+    background-image: url('/img/bg-04.png'), url('/img/bg-03.png');
     background-repeat: no-repeat;
     background-size: 200px, 300px;
     background-position: bottom -30px left -20px, top -30px right -20px;

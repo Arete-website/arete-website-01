@@ -15,7 +15,7 @@
             <img
               :src="`/img/${volunteer.src}`"
               :alt="volunteer.name"
-              class="rounded-full w-full md:w-[250px]"
+              class="rounded-full w-[200px] md:w-[250px]"
             />
             <h4 class="text-base font-bold mb-6">
               {{ volunteer.name }}

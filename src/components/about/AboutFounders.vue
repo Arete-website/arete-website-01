@@ -15,7 +15,7 @@
             <img
               :src="`/img/${founder.src}`"
               :alt="founder.name"
-              class="rounded-full"
+              class="rounded-full w-[200px] md:w-[250px]"
             />
             <h4 class="text-base font-bold mb-6">
               {{ founder.name }}
