@@ -21,16 +21,12 @@
               {{ volunteer.name }}
             </h4>
             <ul class="flex justify-center items-center space-x-2">
-              <li
-                v-for="social in volunteer.socials"
-                :key="social"
-                class="bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-90 bg-primary text-white mt-2"
-              >
+              <li v-for="social in volunteer.socials" :key="social">
                 <a
                   :href="social.link"
                   target="_blank"
                   :class="social.icon"
-                  class="text-lg"
+                  class="text-lg bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-90 bg-primary text-white mt-2"
                 ></a>
               </li>
             </ul>
