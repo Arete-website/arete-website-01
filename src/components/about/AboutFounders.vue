@@ -21,16 +21,12 @@
               {{ founder.name }}
             </h4>
             <ul class="flex justify-center items-center space-x-2">
-              <li
-                v-for="social in founder.socials"
-                :key="social"
-                class="bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-90 text-primary bg-white mt-2"
-              >
+              <li v-for="social in founder.socials" :key="social">
                 <a
                   :href="social.link"
                   target="_blank"
                   :class="social.icon"
-                  class="text-lg"
+                  class="text-lg bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-90 text-primary bg-white mt-2"
                 ></a>
               </li>
             </ul>
@@ -48,56 +44,56 @@ export default {
       founders: [
         {
           name: "Mbaoma Chioma M.",
-          src: "avatar-01.png",
+          src: "f-01.jpeg",
           socials: [
             {
-              link: "https://twitter.com",
+              link: "https://twitter.com/mba_oma",
               icon: "mdi mdi-twitter",
             },
             {
-              link: "https://linkedin.com",
+              link: "https://www.linkedin.com/in/mbaoma-chioma-mary",
               icon: "mdi mdi-linkedin",
             },
           ],
         },
         {
           name: "Jegede Abisola C.",
-          src: "avatar-02.png",
+          src: "f-02.jpeg",
           socials: [
             {
-              link: "https://twitter.com",
+              link: "https://www.twitter.com/arby981",
               icon: "mdi mdi-twitter",
             },
             {
-              link: "https://linkedin.com",
+              link: "https://www.linkedin.com/in/abisola-jegede/",
               icon: "mdi mdi-linkedin",
             },
           ],
         },
         {
           name: "Ifihanagbara Oluseye",
-          src: "avatar-03.png",
+          src: "f-03.JPG",
           socials: [
             {
-              link: "https://twitter.com",
+              link: "https://twitter.com/ifihan_",
               icon: "mdi mdi-twitter",
             },
             {
-              link: "https://linkedin.com",
+              link: "https://www.linkedin.com/in/ifihan-olusheye",
               icon: "mdi mdi-linkedin",
             },
           ],
         },
         {
           name: "Maryann Onuhua C.",
-          src: "avatar-04.png",
+          src: "f-04.jpeg",
           socials: [
             {
-              link: "https://twitter.com",
+              link: "https://twitter.com/Maryanneonuoha",
               icon: "mdi mdi-twitter",
             },
             {
-              link: "https://linkedin.com",
+              link: "https://www.linkedin.com/in/maryann-onuoha-555210198",
               icon: "mdi mdi-linkedin",
             },
           ],
