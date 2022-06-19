@@ -23,7 +23,7 @@
     @apply mt-20;
   }
   .toggler {
-    @apply w-5 bg-primary h-0.5 mb-1 transition ease-in-out duration-500;
+    @apply w-5 bg-primary h-0.5 mb-1 transition ease-in-out duration-500 last:mb-0;
   }
   .change .toggler:nth-child(1) {
     transform: translate(1px, 6px) rotate(45deg);
@@ -33,9 +33,6 @@
   }
   .change .toggler:nth-child(3) {
     transform: translate(0px, -6px) rotate(-45deg);
-  }
-  .ddd {
-    @apply after:transition-[width] ease-in-out duration-300 relative after:absolute after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-white after:left-0 hover:after:w-full;
   }
   .label-style {
     @apply block mb-2 text-gray-600;

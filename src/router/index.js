@@ -17,6 +17,12 @@ const router = createRouter({
         import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
     },
     {
+      path: "/thanks",
+      name: "thanks",
+      component: () =>
+        import(/* webpackChunkName: "thanks" */ "../views/ThanksView.vue"),
+    },
+    {
       path: "/partnership",
       name: "partnership",
       component: Partnership, // async-load doesn't work on hash (#),
