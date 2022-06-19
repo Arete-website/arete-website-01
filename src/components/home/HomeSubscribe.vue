@@ -12,15 +12,32 @@
           and events by subscribing to our newsletter.
         </p>
         <form
+          method="POST"
+          action="https://formsubmit.co/animashauntaofiq@gmail.com"
           class="mt-12 flex flex-col md:flex-row md:space-x-2 items-center"
-          @submit.prevent
         >
+          <input type="hidden" name="_template" value="basic" />
           <input
-            type="text"
+            type="hidden"
+            name="_next"
+            value="https://areteoutreach.com/thanks?message=You have been successfully subscribed to our waitlist."
+          />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Subscribing to wait list"
+          />
+          <input
+            name="email"
+            type="email"
             placeholder="Enter your mail"
             class="bg-white text-black p-4 rounded-md placeholder:text-[#333333] w-full md:basis-[70%]"
+            v-model="input"
+            required
           />
-          <input type="submit" value="Subscribe" class="submit-btn" />
+          <button type="submit" class="submit-btn" @submit="submitted">
+            Subscribe
+          </button>
         </form>
       </div>
     </div>
@@ -28,7 +45,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      input: "",
+    };
+  },
+  methods: {
+    submitted() {
+      this.input = "";
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

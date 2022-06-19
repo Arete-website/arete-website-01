@@ -19,7 +19,7 @@
               v-for="(route, index) in routes"
               :key="index"
               :class="{
-                'text-[#1d1d1d] lg:text-current lg:border-b-2 border-b-primary':
+                'text-[#1d1d1d] lg:text-current lg:border-b-4 border-b-primary':
                   active === route.path,
               }"
             >

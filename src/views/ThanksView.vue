@@ -7,7 +7,7 @@
     >
       <span class="mdi mdi-check-circle-outline text-8xl text-green-500"></span>
       <h1 class="text-2xl font-bold mt-4">Great!</h1>
-      <p class="mt-2">Your message has been successfully sent.</p>
+      <p class="mt-2">{{ message }}</p>
 
       <router-link
         :to="{ name: 'home' }"
@@ -19,6 +19,14 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  computed: {
+    message() {
+      return this.$route.query.message;
+    },
+  },
+};
+</script>
 
 <style scoped></style>

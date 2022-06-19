@@ -19,7 +19,7 @@
           <input
             type="hidden"
             name="_next"
-            value="https://areteoutreach.com/thanks"
+            value="https://areteoutreach.com/thanks?message=Your message has been successfully sent."
           />
           <input type="hidden" name="_subject" value="Contacting Arete!" />
           <input
