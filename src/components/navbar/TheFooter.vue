@@ -17,16 +17,12 @@
             children with programming and soft skills.
           </p>
           <ul class="flex items-center space-x-2 md:basis-[33.33%]">
-            <li
-              class="bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-90 text-primary bg-white"
-              v-for="(social, index) in socials"
-              :key="index"
-            >
+            <li v-for="(social, index) in socials" :key="index">
               <a
                 :href="social.link"
                 target="_blank"
                 :class="social.icon"
-                class="text-lg"
+                class="text-lg bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-90 text-primary bg-white"
               ></a>
             </li>
           </ul>
