@@ -13,7 +13,7 @@
         </p>
         <form
           method="POST"
-          action="https://formsubmit.co/animashauntaofiq@gmail.com"
+          action="https://formsubmit.co/areteorg7@gmail.com"
           class="mt-12 flex flex-col md:flex-row md:space-x-2 items-center"
         >
           <input type="hidden" name="_template" value="basic" />
