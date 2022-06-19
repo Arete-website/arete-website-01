@@ -20,7 +20,7 @@
           <input
             type="hidden"
             name="_next"
-            value="https://areteoutreach.com/thanks?message=You have been successfully subscribed to our waitlist."
+            value="https://areteoutreach.com/thanks?message=You're now subscribed to our waitlist."
           />
           <input
             type="hidden"
