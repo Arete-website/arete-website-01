@@ -3,7 +3,7 @@
     <div class="container">
       <div class="flex justify-center items-center md:justify-start">
         <router-link :to="{ name: 'home' }" class="font-bold text-2xl mb-8"
-          ><img src="/img/logo.png" alt="logo"
+          ><img src="/img/logo-.png" alt="logo" class="w-[120px]"
         /></router-link>
       </div>
       <div

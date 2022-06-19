@@ -10,11 +10,24 @@
           Arete appreciates your feedback. We are constantly on the search for
           ways to improve our services. Feel free to send us a message!
         </p>
-        <form class="mt-12 mb-6" @submit.prevent>
+        <form
+          class="mt-12 mb-6"
+          method="POST"
+          action="https://formsubmit.co/areteorg7@gmail.com"
+        >
+          <input type="hidden" name="_template" value="basic" />
           <input
-            type="text"
+            type="hidden"
+            name="_next"
+            value="https://areteoutreach.com/thanks"
+          />
+          <input type="hidden" name="_subject" value="Contacting Arete!" />
+          <input
+            name="email"
+            type="email"
             placeholder="Enter your mail"
             class="bg-white text-black p-4 rounded-md placeholder:text-[#333333] w-full mb-6"
+            required
           />
           <textarea
             name="message"
@@ -23,8 +36,9 @@
             rows="10"
             class="bg-white text-black p-4 rounded-md placeholder:text-[#333333] w-full mb-6"
             placeholder="Enter your message"
+            required
           ></textarea>
-          <input type="submit" value="Send A Message" class="submit-btn" />
+          <button type="submit" class="submit-btn">Send A Message</button>
         </form>
       </div>
     </div>
@@ -32,11 +46,7 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    contactUs() {},
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped></style>
