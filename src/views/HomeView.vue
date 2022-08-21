@@ -4,7 +4,6 @@
   <home-who />
   <home-vision />
   <home-objective />
-  <home-happy />
   <home-volunteer />
   <home-ebook />
   <home-subscribe />
@@ -19,7 +18,6 @@ import HomeSubscribe from "../components/home/HomeSubscribe.vue";
 import HomeVision from "../components/home/HomeVision.vue";
 import HomeVolunteer from "../components/home/HomeVolunteer.vue";
 import HomeWho from "../components/home/HomeWho.vue";
-import HomeHappy from "../components/HomeHappy.vue";
 import TheFooter from "../components/navbar/TheFooter.vue";
 import TheHeader from "../components/navbar/TheHeader.vue";
 export default {
@@ -30,7 +28,6 @@ export default {
     HomeWho,
     HomeVision,
     HomeObjective,
-    HomeHappy,
     HomeVolunteer,
     HomeEbook,
     HomeSubscribe,

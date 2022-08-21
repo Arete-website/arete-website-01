@@ -1,8 +1,13 @@
 <template>
-  <div class="bg-[#031324] py-16 text-white">
+  <div class="py-[100px]">
     <div class="container">
       <div class="text-center md:text-left">
-        <h3 class="text-xl lg:text-3xl font-bold mb-6">Meet The Founders</h3>
+        <h3
+          class="text-2xl font-semibold mb-6 relative center-title-tag text-primary text-center"
+          data-aos="fade"
+        >
+          Meet The Founders
+        </h3>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-4 md:gap-y-0 md:gap-x-10 mt-12 lg:text-lg"
         >
@@ -15,7 +20,7 @@
             <img
               :src="`/img/${founder.src}`"
               :alt="founder.name"
-              class="rounded-full w-[200px] md:w-[250px]"
+              class="rounded-sm w-[200px] md:w-[250px]"
             />
             <h4 class="text-base font-bold mb-6">
               {{ founder.name }}
@@ -26,7 +31,7 @@
                   :href="social.link"
                   target="_blank"
                   :class="social.icon"
-                  class="text-lg bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-90 text-primary bg-white mt-2"
+                  class="text-lg bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-white transition duration-500 ease-in-out hover:bg-white hover:border-primary hover:text-primary hover:scale-90 text-white bg-primary mt-2"
                 ></a>
               </li>
             </ul>

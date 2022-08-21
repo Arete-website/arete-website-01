@@ -27,6 +27,20 @@ const router = createRouter({
       name: "partnership",
       component: Partnership, // async-load doesn't work on hash (#),
     },
+    {
+      path: "/event",
+      name: "event",
+      component: () =>
+        import(/* webpackChunkName: "Events" */ "../views/EventsView.vue"),
+    },
+    {
+      path: "/beneficiaries",
+      name: "beneficiaries",
+      component: () =>
+        import(
+          /* webpackChunkName: "beneficiaries" */ "../views/BeneficiariesView.vue"
+        ),
+    },
   ],
   scrollBehavior() {
     return {

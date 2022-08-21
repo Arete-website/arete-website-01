@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-open text-base font-normal;
+    @apply font-open text-base font-normal text-[#0A1F35];
   }
   html {
     scroll-behavior: smooth;
@@ -46,6 +46,12 @@
   .underline-effect {
     @apply after:transition-[width] ease-in-out duration-500 relative after:absolute after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-current after:left-0 hover:after:w-full;
   }
+  .center-title-tag {
+    @apply after:content-[''] after:absolute after:-top-4 after:left-1/2 after:-translate-x-1/2 after:rounded-md after:bg-primary after:h-1.5 after:w-[60px];
+  }
+  .left-title-tag {
+    @apply after:content-[''] after:absolute after:-top-4 after:left-0 after:rounded-md after:bg-primary after:h-1.5 after:w-[60px];
+  }
   .err {
     @apply border-solid border border-blue-900 mb-2 !important;
   }
@@ -71,7 +77,9 @@
     width: 100%;
     height: 100%;
     background: rgb(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+  }
+  .partner.main-bg::after {
+    backdrop-filter: blur(8px);
   }
   .other-bg::after {
     content: '';

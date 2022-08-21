@@ -1,39 +1,53 @@
 <template>
-  <div class="md:grid grid-cols-2 text-white md:text-left" id="volunteer">
-    <div class="relative other-bg">
-      <img
-        src="/img/illus-02.png"
-        alt="illus-02"
-        class="h-auto md:h-[500px] w-full"
-      />
-    </div>
-    <div class="bg-[rgba(3,19,36,1)] basis-1/2 py-8 flex flex-col">
-      <div class="container lg:w-[420px]" data-aos="fade">
-        <h5 class="text-xl lg:text-3xl font-bold mb-6 text-center md:text-left">
-          Volunteer with us
-        </h5>
-        <p class="lg:text-lg">
-          “We make a living by what we get, but we make a life by what we give”-
-          Winston Churchill
-        </p>
-        <p class="mt-6">
-          Join us in making this good work get to as many people as possible,
-          far and wide in record time.
-        </p>
-        <a
-          href="https://forms.gle/96yLtBpT6jh3ybp68"
-          target="_blank"
-          class="bg-white text-primary rounded-md px-12 py-4 mt-12 font-semibold capitalize btn md:w-[200px] block md:inline-block text-center"
-        >
-          volunteer
-        </a>
-      </div>
-    </div>
-  </div>
+  <side-slide src="illus-01" bg="bg-[#00366E]" alt="happy_img">
+    <h5 class="text-xl lg:text-3xl xl:text-4xl font-semibold mb-6">
+      Make a child happy
+    </h5>
+    <p class="lg:text-lg">
+      Arete organizes annual free bootcamps to cater for underpriviledged
+      children and youths. With your donation, you can sponsor a child to get
+      acces to any of our bootcamps.
+    </p>
+    <a
+      href="https://forms.gle/J7mqEfchsAA1eL3h6"
+      target="_blank"
+      class="bg-white text-primary rounded-md py-4 mt-[36px] font-semibold btn md:px-0 w-[208px] inline-block text-center capitalize"
+      >Make A Donation</a
+    >
+  </side-slide>
+  <side-slide
+    src="illus-02"
+    bg="bg-[rgba(3,19,36,1)]"
+    alt="volunteer_img"
+    :reverse="true"
+  >
+    <h6 class="text-xl lg:text-3xl xl:text-4xl font-semibold mb-6">
+      Volunteer with Arete
+    </h6>
+    <p class="lg:text-lg">
+      “We make a living by what we get, but we make a life by what we give” -
+      Winston Churchill
+    </p>
+    <p class="mt-6 lg:text-lg">
+      Please help make a difference by volunteering and joining us to impact as
+      many people as possible, far and wide, in record time.
+    </p>
+    <a
+      href="https://forms.gle/96yLtBpT6jh3ybp68"
+      target="_blank"
+      class="bg-white text-primary rounded-md py-4 mt-[36px] font-semibold btn md:px-0 w-[208px] inline-block text-center capitalize"
+    >
+      volunteer
+    </a>
+  </side-slide>
 </template>
 
 <script>
-export default {};
+import SideSlide from "../reuseables/SideSlide.vue";
+
+export default {
+  components: { SideSlide },
+};
 </script>
 
 <style lang="scss" scoped></style>

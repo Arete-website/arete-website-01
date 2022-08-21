@@ -16,16 +16,6 @@
             Arete is a non-profit that believes in teaching and equipping
             children with programming and soft skills.
           </p>
-          <ul class="flex items-center space-x-2 md:basis-[33.33%]">
-            <li v-for="(social, index) in socials" :key="index">
-              <a
-                :href="social.link"
-                target="_blank"
-                :class="social.icon"
-                class="text-lg bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-90 text-primary bg-white"
-              ></a>
-            </li>
-          </ul>
         </div>
         <ul
           class="mb-10 md:mb-0 md:basis-[33.33%] md:grid md:grid-cols-2 xl:grid-cols-3"
@@ -35,20 +25,31 @@
             v-for="(link, index) in links"
             :key="index"
           >
-            <a :href="link.route">{{ link.name }}</a>
+            <router-link
+              :to="{ name: link.route }"
+              v-if="link.name !== 'contact'"
+              >{{ link.name }}</router-link
+            >
+            <a :href="link.route" v-else>{{ link.name }}</a>
           </li>
         </ul>
         <ul>
-          <li class="mb-4">
-            Copyright © {{ getYear }} Arete. <br />
-            All Rights Reserved.
+          <li
+            class="flex justify-center md:justify-start items-center space-x-2 md:basis-[33.33%] mb-4"
+          >
+            <a
+              v-for="(social, index) in socials"
+              :key="index"
+              :href="social.link"
+              target="_blank"
+              :class="social.icon"
+              class="text-lg bg-secondary rounded-md py-0.5 px-1.5 cursor-pointer border border-solid border-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-90 text-primary bg-white"
+            ></a>
           </li>
           <li class="mb-4">
             <a href="mailto:areteorg7@gmail.com">areteorg7@gmail.com</a>
           </li>
-          <li class="mb-4">
-            <a href="tel:+2348069398767">+2348069398767</a>
-          </li>
+          <li class="mb-4">© {{ getYear }} All Rights Reserved.</li>
         </ul>
       </div>
     </div>
@@ -63,28 +64,40 @@ export default {
       links: [
         {
           name: "home",
-          route: "/",
+          route: "home",
         },
         {
           name: "about",
           route: "about",
         },
         {
+          name: "partnership",
+          route: "partnership",
+        },
+        {
           name: "contact",
           route: "/partnership#contact",
         },
         {
-          name: "FAQ's",
-          route: "#",
+          name: "events",
+          route: "event",
         },
         {
-          name: "event",
-          route: "https://photos.app.goo.gl/rXvagd7m5Djw1uKL9",
+          name: "beneficiaries",
+          route: "beneficiaries",
         },
-        {
-          name: "donate",
-          route: "https://forms.gle/J7mqEfchsAA1eL3h6",
-        },
+        // {
+        //   name: "FAQ's",
+        //   route: "#",
+        // },
+        // {
+        //   name: "event",
+        //   route: "https://photos.app.goo.gl/rXvagd7m5Djw1uKL9",
+        // },
+        // {
+        //   name: "donate",
+        //   route: "https://forms.gle/J7mqEfchsAA1eL3h6",
+        // },
       ],
       socials: [
         {

@@ -1,7 +1,7 @@
 <template>
-  <div id="contact"></div>
   <div
-    class="subscribe py-16 flex justify-center items-center text-center text-white"
+    class="subscribe py-16 flex justify-center items-center text-center text-white scroll-mt-16"
+    id="contact"
   >
     <div class="container">
       <div class="lg:w-[600px] m-auto" data-aos="fade">

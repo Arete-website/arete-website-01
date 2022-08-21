@@ -15,13 +15,17 @@
               educating children and young people in tech and supporting their
               journeys through the Arete Bursary.
             </p>
-            <p>
+            <p class="mb-[14px]">
               We believe that equipping children and young people with technical
               and soft skills bridges the technological gap between our society
               and the global community.
             </p>
+            <router-link
+              :to="{ name: 'about' }"
+              class="text-primary font-bold btn"
+              >Read More</router-link
+            >
           </div>
-          <px class=""></px>
         </div>
         <ul class="basis-1/2 lg:basis-[480px] 1xl:basis-[480px]">
           <li v-for="who in whos" :key="who" class="pt-1" data-aos="zoom-in">

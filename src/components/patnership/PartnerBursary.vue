@@ -1,40 +1,42 @@
 <template>
-  <div class="py-16 bg-[#F5F9FC]">
+  <div class="py-[100px] bg-[#F5F9FC]">
     <div class="container">
       <div
-        class="flex justify-between items-start flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-8"
+        class="flex justify-between items-start md:items-center flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-8"
       >
-        <div class="md:basis-1/2">
-          <h4 class="text-lg lg:text-xl font-bold mb-6">Arete Busary</h4>
-          <p class="pb-3">
-            Arete's bursary is a subset of Arete. It is set up to sponsor young
-            people's journey in technological fields by:
-          </p>
-          <ul class="list-disc list-inside">
-            <li class="pb-3">Purchasing internet subscriptions for techies</li>
-            <li class="pb-3">Purchasing courses for techies</li>
-          </ul>
-          <p>The bursary runs on goodwill donations from sponsors.</p>
-          <div
-            class="flex justify-between items-center flex-col space-y-2 xl:flex-row xl:space-y-0 xl:space-x-2 my-6"
+        <div class="md:basis-1/2 lg:basis-[400px]">
+          <h4
+            data-aos="fade-up"
+            class="text-lg lg:text-[32px] font-semibold mb-6 relative left-title-tag"
           >
+            Arete Busary
+          </h4>
+          <div data-aos="fade">
+            <p class="pb-3">
+              Arete's bursary is a subset of Arete. It is set up to sponsor
+              young people's journey in technological fields by:
+            </p>
+            <ul class="list-disc list-inside">
+              <li class="pb-3">
+                Purchasing internet subscriptions for techies
+              </li>
+              <li class="pb-3">Purchasing courses for techies</li>
+            </ul>
             <a
               href="https://forms.gle/J7mqEfchsAA1eL3h6"
               target="_blank"
-              class="bg-white text-primary border border-primary rounded-md px-12 py-4 font-semibold btn w-full lg:text-sm mb-0 basis-1/2 block md:inline-block text-center"
+              class="bg-primary text-white rounded-md py-4 mt-[24px] font-semibold btn w-[208px] text-center inline-block"
             >
-              Make a donation</a
-            ><a
-              href="https://forms.gle/J7mqEfchsAA1eL3h6"
-              target="_blank"
-              class="bg-white text-primary border border-primary rounded-md px-12 py-4 font-semibold btn w-full lg:text-sm basis-1/2 block md:inline-block text-center"
+              Donate To Busary</a
             >
-              Request sponsorship
-            </a>
           </div>
         </div>
-        <div class="md:basis-1/2">
-          <img src="/img/abt-01.png" alt="about" class="lg:w-[500px]" />
+        <div class="md:basis-1/2 lg:basis-[448px]" data-aos="zoom-in">
+          <img
+            src="/img/abt-01.svg"
+            alt="about"
+            class="lg:w-[500px] mt-[70px] md:mt-0"
+          />
         </div>
       </div>
     </div>

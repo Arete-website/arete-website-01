@@ -15,7 +15,7 @@
             class="block text-center lg:flex lg:space-x-8 lg:m-0 lg:items-center"
           >
             <li
-              class="mb-4 lg:m-0 mt-10 last:px-4 last:py-4 last:rounded-md last:bg-primary last:text-white last:font-semibold last:w-11/12 last:m-auto last:btn transition-all duration-500 ease-in-out hover:text-[#1d1d1d] lg:underline-effect last:hover:after:w-0 last:hover:text-white"
+              class="mb-4 lg:m-0 mt-10 last:px-4 last:py-2 last:rounded-md last:bg-white last:text-primary last:border last:border-primary last:font-semibold last:w-[200px] last:m-auto last:btn transition-all duration-500 ease-in-out hover:text-[#1d1d1d] lg:underline-effect last:hover:after:w-0 last:hover:text-white last:hover:bg-primary"
               v-for="(route, index) in routes"
               :key="index"
               :class="{
@@ -23,7 +23,12 @@
                   active === route.path,
               }"
             >
-              <a :href="route.path">{{ route.name }}</a>
+              <a :href="route.path" v-if="route.outsideLink">{{
+                route.name
+              }}</a>
+              <router-link :to="{ name: route.path }" v-else>{{
+                route.name
+              }}</router-link>
             </li>
           </ul>
         </nav>
@@ -53,24 +58,25 @@ export default {
     return {
       routes: [
         {
-          name: "volunteer",
-          path: "/#volunteer",
-        },
-        {
-          name: "beneficiaries",
-          path: "https://forms.gle/qwMxqsF6sLfkmpz96",
+          name: "about",
+          path: "about",
         },
         {
           name: "partnership",
           path: "partnership",
         },
         {
-          name: "about",
-          path: "about",
+          name: "beneficiaries",
+          path: "beneficiaries",
         },
         {
-          name: "make a donation",
-          path: "https://forms.gle/J7mqEfchsAA1eL3h6",
+          name: "events",
+          path: "event",
+        },
+        {
+          name: "volunteer",
+          path: "https://forms.gle/96yLtBpT6jh3ybp68",
+          outsideLink: true,
         },
       ],
       show: false,

@@ -4,34 +4,23 @@
       <div>
         <h2
           data-aos="fade-up"
-          class="text-2xl lg:text-4xl font-bold mb-14 md:w-[575px] relative left-title-tag"
+          class="text-2xl lg:text-4xl font-bold mb-5 md:w-[575px] lg:w-[900px] relative left-title-tag"
         >
-          Help Arete To Reach Out To A Larger Audience.
+          Arete organises boootcamps, training and outreaches on softskills.
         </h2>
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-10 mt-12 lg:text-lg text-[rgba(20,20,20,0.62)]"
-        >
-          <div v-for="content in contents" :key="content" data-aos="zoom-in">
-            <p class="font-bold mb-[18px] text-2xl">{{ content.title }}</p>
-            <p class="text-[#141414]">
-              {{ content.content }}
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-[150px]">
-        <div
-          data-aos="zoom-in"
-          v-for="card in cards"
-          :key="card"
-          class="flex justify-between items-center space-y-3 flex-col text-center even:bg-[#F5F9FC] px-6 py-16 rounded-md text-[#1d1d1d]"
-        >
-          <img :src="`/img/${card.src}`" :alt="card.title" class="w-12 h-12" />
-          <h3 class="text-lg lg:text-2xl font-bold mt-3.5 mb-2.5">
-            {{ card.title }}
-          </h3>
-          <p>{{ card.content }}</p>
-          <a href="#" class="font-semibold text-primary mt-[41px]">View More</a>
+        <div class="mt-12 lg:text-lg lg:w-[900px] xl:w-[1128px]">
+          <p class="pb-4">
+            Arete organizes boot camps, events, and training to educate children
+            and students on soft skills. With the help of our fantastic team,
+            we've partnered with various organizations, schools, and communities
+            to teach soft skills.
+          </p>
+          <p>
+            We've created up-to-date curriculums, and with the help of our
+            amazing volunteers, who are professional soft skills trainers and
+            mentors. We've impacted thousands of children around Nigeria while
+            giving them the best soft-skills training and services.
+          </p>
         </div>
       </div>
     </div>

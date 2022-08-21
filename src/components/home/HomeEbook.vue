@@ -1,7 +1,9 @@
 <template>
   <div class="bg-white py-16 text-left">
     <div class="container">
-      <h6 class="font-bold text-xl lg:text-3xl mb-10 md:mb-16 text-center">
+      <h6
+        class="font-bold text-xl lg:text-3xl lg:w-[603px] mx-auto mb-10 md:mb-16 text-center relative center-title-tag"
+      >
         Get Access To Our Ebook on Microsoft Office Tools
       </h6>
       <div class="md:flex justify-center items-start md:space-x-12">
@@ -9,27 +11,25 @@
           <div class="mb-12">
             <p>
               Our e-book contains engaging hands-on exercises to give children
-              and young people an introduction to Microsoft Office Tools and
-              Scratch.
+              and young people an introduciton to Microsoft Office Tools and
+              Scratch. You can also donate an e-book to a child.
             </p>
-            <button
-              class="bg-primary text-white rounded-md px-12 py-4 mt-8 font-semibold btn w-full md:w-[250px]"
+            <div
+              class="flex flex-col justify-center md:justify-start md:flex-row gap-4 items-center mt-[36px]"
             >
-              Shop Now
-            </button>
-          </div>
-          <div>
-            <p>
-              Remember, that the happiest people are not those getting more, buy
-              those giving more. You can also donate an e-book to a child.
-            </p>
-            <a
-              href="https://forms.gle/J7mqEfchsAA1eL3h6"
-              target="_blank"
-              class="bg-white text-primary rounded-md px-12 py-4 mt-8 font-semibold btn border border-solid border-primary capitalize w-full md:w-[250px] inline-block text-center"
-            >
-              make a donation
-            </a>
+              <button
+                class="bg-primary text-white rounded-md py-4 font-semibold btn w-full md:w-[200px]"
+              >
+                Shop Now
+              </button>
+              <a
+                href="https://forms.gle/J7mqEfchsAA1eL3h6"
+                target="_blank"
+                class="bg-white text-primary rounded-md py-4 font-semibold btn border border-solid border-primary capitalize w-full md:w-[203px] inline-block text-center"
+              >
+                make a donation
+              </a>
+            </div>
           </div>
         </div>
         <div class="md:basis-2/5 lg:basis-auto mt-8 md:mt-0" data-aos="zoom-in">
