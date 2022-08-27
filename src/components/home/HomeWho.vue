@@ -11,13 +11,13 @@
               Who Are We?
             </h2>
             <p class="mb-6">
-              Arete, founded in 2019, is a non-profit organization, focusing on
+              Arete, founded in 2019, is a non-profit organization focusing on
               educating children and young people in tech and supporting their
               journeys through the Arete Bursary.
             </p>
             <p class="mb-[14px]">
-              We believe that equipping children and young people with technical
-              and soft skills bridges the technological gap between our society
+              We believe that equipping children and young people with digital
+              and soft skills bridge the technological gap between our society
               and the global community.
             </p>
             <router-link
@@ -49,17 +49,17 @@ export default {
         {
           title: "Tech In Slums",
           content:
-            "We partner with outreach programs and non-profits to bring tech to children and young people living  in slums.",
+            "We partner with individuals, corportate bodies and non-profits to bring digital and soft skills to children and young people living in slums.",
         },
         {
           title: "Training bootcamps",
           content:
-            "We host virtual bootcamps, where we teach children and young people valuable tech and people skills.",
+            "We host virtual bootcamps, where we teach children and young people digital and soft skills.",
         },
         {
           title: "Arete Bursary",
           content:
-            "We also run a bursary that caters to young people building a career in tech.",
+            "We also run a bursary that caters to young people building tech careers.",
         },
       ],
     };

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    To turn a generation of computer illiterates into a digitalized nation.
-  </div>
+  <div>To empower young people interested in building tech careers.</div>
 </template>
 
 <script>

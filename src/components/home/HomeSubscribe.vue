@@ -11,34 +11,15 @@
           Be the first to know about our bootcamps , partnerships, outreachs,
           and events by subscribing to our newsletter.
         </p>
-        <form
-          method="POST"
-          action="https://formsubmit.co/areteorg7@gmail.com"
-          class="mt-12 flex flex-col md:flex-row md:space-x-2 items-center"
-        >
-          <input type="hidden" name="_template" value="basic" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://areteoutreach.com/thanks?message=You're now subscribed to our waitlist."
-          />
-          <input
-            type="hidden"
-            name="_subject"
-            value="Subscribing to wait list"
-          />
-          <input
-            name="email"
-            type="email"
-            placeholder="Enter your mail"
-            class="bg-white text-black p-4 rounded-md placeholder:text-[#333333] w-full md:basis-[70%]"
-            v-model="input"
-            required
-          />
-          <button type="submit" class="submit-btn" @submit="submitted">
-            Subscribe
-          </button>
-        </form>
+        <iframe 
+        class="mt-12 flex flex-col md:flex-row md:space-x-2 items-center"
+          src="https://areteoutreach.substack.com/embed"
+          width="500"
+          height="100"
+          style="border: 1px solid #00366e; background: white"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
       </div>
     </div>
   </div>

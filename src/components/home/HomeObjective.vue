@@ -11,14 +11,11 @@
           Our Objectives
         </h3>
         <p class="lg:text-xl leading-[31px]">
-          We believe that teaching and equipping children with programming and
-          soft skills will improve their typing, critical thinking, and
-          problem-solving abilities. <br class="lg:hidden" /><br
-            class="lg:hidden"
-          />
-          This will bridge the technological gap between our society and the
-          global community and also help them solve the problems in the society
-          in the long run.
+          We believe that equipping children with digital and soft skills will
+          improve their analytical thinking, and problem-solving abilities;
+          <br class="lg:hidden" /><br class="lg:hidden" />
+          bridging the technological gap between our society and the global
+          community in the long run.
         </p>
       </div>
       <div
@@ -40,15 +37,14 @@
         <h4
           class="font-bold text-2xl lg:text-3xl mb-6 relative center-title-tag"
         >
-          Register for our Bootcamps and Outreaches
+          Bootcamps and Outreaches
         </h4>
         <p class="lg:text-xl leading-[31px]">
-          Arete has hosted several outreaches and boot camps. To enroll a ward
-          or to know when Arete hosts its Bootcamps, please check out our
-          <a href="#" class="font-bold text-primary">Events Page</a>.
+          Arete regularly hosts community outreaches and boot camps. For more
+          information on how to participate in or sponsor outreach, kindly check
+          out our
+          <a href="/event" class="font-bold text-primary">Events Page</a>.
           <br class="lg:hidden" /><br class="lg:hidden" />
-          Arete also hosts outreaches to schools and communities to know more,
-          <a href="#" class="font-bold text-primary">click here</a>.
         </p>
       </div>
       <div
