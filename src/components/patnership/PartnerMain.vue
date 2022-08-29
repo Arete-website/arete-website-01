@@ -26,7 +26,7 @@ export default {
         "Leadership",
         "Unity",
         "Quality",
-        "Strength",
+        "Impact",
         "Collaboration",
       ],
     };

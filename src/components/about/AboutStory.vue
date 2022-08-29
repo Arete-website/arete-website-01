@@ -16,13 +16,16 @@
           data-aos="fade"
         >
           <p>
-            In December 2019, Abisola, Ifihan, Omar, and Maryann met virtually
-            and came up with an idea to help children and students learn soft
-            skills. Omar gave the name Arete, a Greek word for "Excellence" The
-            founders talked to some mutual friends, and Arete kicked off. Along
-            with the Arete team, they have impacted over a thousand children and
-            students across Nigeria by organizing and planning free training,
-            outreaches, and Bootcamps on soft skills.
+            In December 2019, Abisola, Ifihan, Chioma (Omar), and Maryann came
+            up with an idea to help children and students learn soft skills.
+            Omar gave the name aretḗ, a Greek word for "excellence." The
+            founders talked to some mutual friends, and Arete kicked off.
+          </p>
+          <br />
+          <p>
+            Together, the founders, well-wishers, and volunteers have impacted
+            over a thousand children and students across Nigeria by hosting free
+            training, outreaches, and boot camps on digital and soft skills.
           </p>
         </div>
       </div>

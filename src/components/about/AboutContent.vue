@@ -34,12 +34,12 @@ export default {
         {
           title: "Arete for Soft-Skills",
           content:
-            "Arete is an initiative that offers teaching services on soft skills such as Microsoft Packages such as Microsoft Word, Microsoft-Excel, Microsoft-Powerpoint, Microsoft -Access, and Scratch for children and students.",
+            "At Arete, children and young people work in a team, building communication and teamwork skills. The projects they work on help trigger their critical thinking, creativity, and work ethic.",
         },
         {
           title: "Arete for Tech",
           content:
-            "Arete recently started teaching tech-related courses such as front-end development and design. Our team stays current on the latest technology and provides a professional curriculum for all the teaching services we offer.",
+            "Arete teaches children coding, design, analytical, and writing skills. Our team stays current on the latest technology and provides a professional curriculum for all the teaching services we offer.",
         },
       ],
     };
