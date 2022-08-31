@@ -57,7 +57,7 @@ export default {
             "We host virtual bootcamps, where we teach children and young people digital and soft skills.",
         },
         {
-          title: "Arete Bursary",
+          title: "Arete's Bursary",
           content:
             "We also run a bursary that caters to young people building tech careers.",
         },
