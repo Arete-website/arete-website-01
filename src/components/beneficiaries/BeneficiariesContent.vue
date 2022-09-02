@@ -2,29 +2,14 @@
   <div class="pt-[56px] pb-[100px]">
     <div class="container">
       <div>
-        <h2 data-aos="fade" class="text-xl font-semibold mb-8 text-left">
-          Arete's Bursary
-        </h2>
-        <p>
-          Arete's bursary is a subset of Arete; it is set up to sponsor young
-          people's journey in technological fields by:
-
-          <li>purchasing internet subscriptions for techies</li>
-          <li>purchasing courses for techies</li>
-          <a
-            href="https://docs.google.com/presentation/d/18RRg1y_WvwUVmGfaRMf5jBnQFdOXjtOj/edit?usp=sharing&ouid=102030039098850560749&rtpof=true&sd=true"
+        <h2 data-aos="fade" class="text-xl font-semibold mb-8 text-center">
+          To know when our next event, bootcamp and outreach comes up click
+          <router-link
+            :to="{ name: 'event' }"
             class="text-primary font-semibold"
+            >here</router-link
           >
-            Read More</a
-          >
-        </p>
-        <a
-          href="https://forms.gle/8BHJMd2rPEYcBUou7"
-          target="_blank"
-          class="bg-primary text-white rounded-md py-4 mt-[24px] font-semibold btn w-[208px] text-center inline-block"
-        >
-          Benefit from the Bursary</a
-        >
+        </h2>
       </div>
     </div>
     <side-slide
@@ -61,7 +46,8 @@ export default {
       slides: [
         {
           title: "Our learners",
-          content: "Arete focuses on educating children and youths.",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar at mauris quis blandit faucibus quis tempus. Amet diam tempus amet, massa ultrices. Parturient mi, ullamcorper diam in dolor pellentesque sagittis ultricies justo. ",
           src: "beneficiary-01",
           bg: "bg-[#F5F9FC]",
           reverse: true,
@@ -69,7 +55,7 @@ export default {
         {
           title: "Our Volunteers",
           content:
-            "Our volunteers are dedicated individuals who love to impact society positively.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar at mauris quis blandit faucibus quis tempus. Amet diam tempus amet, massa ultrices. Parturient mi, ullamcorper diam in dolor pellentesque sagittis ultricies justo. ",
           src: "beneficiary-02",
           bg: "bg-[rgba(232,0,119,0.08)]",
           reverse: false,
@@ -77,7 +63,7 @@ export default {
         {
           title: "Communities and schools",
           content:
-            "We carry out outreach programs to local communities and schools.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar at mauris quis blandit faucibus quis tempus. Amet diam tempus amet, massa ultrices. Parturient mi, ullamcorper diam in dolor pellentesque sagittis ultricies justo. ",
           src: "beneficiary-03",
           bg: "bg-[#F5F9FC]",
           reverse: true,

@@ -12,10 +12,13 @@
         <div
           class="md:basis-[33.33%] flex justify-center flex-col items-center md:items-start mb-10 md:mb-0"
         >
-          <p class="mb-6">
+          <p class="mb-3">
             Arete is a non-profit that equips children with digital and soft
-            skills. <br />
-            “Alone we can do so little; together we can do so much.” - Helen Keller
+            skills.
+          </p>
+          <p>
+            “Alone we can do so little; together we can do so much.” - Helen
+            Keller
           </p>
         </div>
         <ul

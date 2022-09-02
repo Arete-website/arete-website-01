@@ -16,13 +16,13 @@
         <h6 class="text-xl lg:text-3xl font-bold mb-6">
           Subscribe to our newsletter
         </h6>
-        <p class="lg:text-lg font-medium" style="margin-bottom: 2rem;">
-          Be the first to know about our bootcamps , partnerships, outreachs,
-          and events by subscribing to our newsletter.
+        <p class="lg:text-lg font-medium mb-8">
+          Be the first to know about our bootcamps, partnerships, outreachs, and
+          events by subscribing to our newsletter.
         </p>
         <iframe
+          class="md:w-[480px]"
           src="https://areteoutreach.substack.com/embed"
-          width="480"
           height="100"
           style="border: 1px solid transparent; background: #00366e"
           frameborder="0"
@@ -48,6 +48,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

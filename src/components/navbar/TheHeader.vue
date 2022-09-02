@@ -12,18 +12,20 @@
           :class="{ open: show }"
         >
           <ul
-            class="block text-center lg:flex lg:space-x-8 lg:m-0 lg:items-center"
+            class="block text-center lg:flex lg:space-x-6 lg:m-0 lg:items-center"
           >
             <li
-              class="mb-4 lg:m-0 mt-10 last:px-4 last:py-2 last:rounded-md last:bg-white last:text-primary last:border last:border-primary last:font-semibold last:w-[200px] last:m-auto last:btn transition-all duration-500 ease-in-out hover:text-[#1d1d1d] lg:underline-effect last:hover:after:w-0 last:hover:text-white last:hover:bg-primary"
+              class="mb-4 lg:m-0 mt-10 transition-all duration-500 ease-in-out hover:text-[#1d1d1d] lg:underline-effect"
               v-for="(route, index) in routes"
               :key="index"
               :class="{
                 'text-[#1d1d1d] lg:text-current lg:border-b-4 border-b-primary':
                   active === route.path,
+                'bg-white text-primary border border-primary font-semibold w-[200px] m-auto btn hover:after:w-0 hover:text-white hover:bg-primary py-2 rounded-md':
+                  route.outsideLink,
               }"
             >
-              <a :href="route.path" v-if="route.outsideLink">{{
+              <a :href="route.path" target="_blank" v-if="route.outsideLink">{{
                 route.name
               }}</a>
               <router-link :to="{ name: route.path }" v-else>{{
@@ -74,10 +76,9 @@ export default {
           path: "event",
         },
         {
-          name: "volunteer",
-          path: "https://forms.gle/96yLtBpT6jh3ybp68",
+          name: "Benefit from Bursary",
+          path: "https://forms.gle/8BHJMd2rPEYcBUou7",
           outsideLink: true,
-          target: "_blank",
         },
       ],
       show: false,
