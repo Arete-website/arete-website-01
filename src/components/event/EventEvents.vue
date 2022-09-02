@@ -49,23 +49,37 @@
         >
           Past Events
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div v-for="event in events" :key="event">
-            <img
-              :src="event.picture"
-              alt="event-01"
-              class="h-[300px] w-full object-cover mb-5"
-            />
-            <p class="text-sm flex items-center gap-1.5 mb-1">
-              <span class="mdi mdi-circle text-[8px] text-primary"></span>
-              <span>{{ event.tag }}</span>
-            </p>
-            <p class="font-bold text-2xl uppercase mb-5">{{ event.event }}</p>
-            <p class="font-semibold text-lg mb-5">
-              {{ truncateText(event.summary) }}
-            </p>
-            <a href="#" class="text-primary font-semibold">Read More</a>
-          </div>
+        <div class="mt-6">
+          <carousel
+            :settings="settings"
+            :breakpoints="breakpoints"
+            :autoplay="3000"
+            v-if="events.length"
+          >
+            <slide v-for="event in events" :key="event">
+              <div class="text-left md:mr-4">
+                <img
+                  :src="event.picture"
+                  alt="event-01"
+                  class="h-[300px] w-full object-cover mb-5"
+                />
+                <p class="text-sm flex items-center gap-1.5 mb-1">
+                  <span class="mdi mdi-circle text-[8px] text-primary"></span>
+                  <span>{{ event.tag }}</span>
+                </p>
+                <p class="font-bold text-2xl uppercase mb-5">
+                  {{ event.event }}
+                </p>
+                <p class="font-semibold text-lg mb-5">
+                  {{ truncateText(event.summary) }}
+                </p>
+                <a href="#" class="text-primary font-semibold">Read More</a>
+              </div>
+            </slide>
+            <template #addons>
+              <navigation />
+            </template>
+          </carousel>
         </div>
       </div>
     </div>
@@ -73,10 +87,26 @@
 </template>
 
 <script>
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
 export default {
+  components: { Carousel, Slide, Navigation },
   data() {
     return {
       events: [],
+      settings: {
+        itemsToShow: 1,
+      },
+      breakpoints: {
+        700: {
+          itemsToScroll: 2,
+          itemsToShow: 2,
+        },
+        1200: {
+          itemsToScroll: 3,
+          itemsToShow: 3,
+        },
+      },
     };
   },
   methods: {
@@ -99,4 +129,39 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.carousel {
+  padding-top: 61px;
+}
+:deep(.carousel__prev),
+:deep(.carousel__next) {
+  position: absolute;
+  top: 0;
+  box-sizing: content-box;
+  background: #00366e;
+  border-radius: 5px;
+}
+
+:deep(.carousel__prev) {
+  left: 43%;
+}
+
+:deep(.carousel__next) {
+  right: 43%;
+}
+
+:deep(.carousel__prev--in-active),
+:deep(.carousel__next--in-active) {
+  background: #a39c9c;
+}
+
+@media screen and (min-width: 700px) {
+  :deep(.carousel__prev) {
+    left: 48%;
+  }
+
+  :deep(.carousel__next) {
+    right: 48%;
+  }
+}
+</style>
