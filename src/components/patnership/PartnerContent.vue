@@ -1,20 +1,14 @@
 <template>
   <div class="py-[100px]">
     <div class="container">
-      <div>
-        <h2
-          data-aos="fade-up"
-          class="text-2xl lg:text-4xl font-bold mb-14 md:w-[575px] relative left-title-tag"
-        ></h2>
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-10 mt-12 lg:text-lg text-[rgba(20,20,20,0.62)]"
-        >
-          <div v-for="content in contents" :key="content" data-aos="zoom-in">
-            <p class="font-bold mb-[18px] text-2xl">{{ content.title }}</p>
-            <p class="text-[#141414]">
-              {{ content.content }}
-            </p>
-          </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-10 mt-12 lg:text-lg text-[rgba(20,20,20,0.62)]"
+      >
+        <div v-for="content in contents" :key="content" data-aos="zoom-in">
+          <p class="font-bold mb-[18px] text-2xl">{{ content.title }}</p>
+          <p class="text-[#141414]">
+            {{ content.content }}
+          </p>
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-[150px]">
@@ -80,14 +74,14 @@ export default {
           content:
             "Sponsor arete by partering with us and helping to reach out to a larger audience via our outreaches and bootcamps.",
           src: "icon-02.svg",
-          link: "https://forms.gle/a3Dvi1JfjXh1jLsH7",
+          link: "https://forms.gle/J7mqEfchsAA1eL3h6",
         },
         {
           title: "Donation",
           content:
             "You can make make donations to futher a childs soft skills journey by donating to Arete or sponsor a youth who is in need via Arete Busaries.",
           src: "icon-03.svg",
-          link: "https://forms.gle/a3Dvi1JfjXh1jLsH7",
+          link: "https://forms.gle/J7mqEfchsAA1eL3h6",
         },
       ],
     };

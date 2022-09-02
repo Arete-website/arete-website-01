@@ -5,7 +5,7 @@
         <h2
           class="bg-[#F5F9FC] text-[#141414] font-semibold text-2xl md:text-3xl p-3 pr-[3rem] rounded-md inline-block mb-[37px]"
         >
-          Upcoming event
+          Upcoming Event
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <img src="/img/obj-02.png" alt="obj-02" />

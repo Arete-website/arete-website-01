@@ -13,7 +13,6 @@
         <p class="lg:text-xl leading-[31px]">
           We believe that equipping children with digital and soft skills will
           improve their analytical thinking, and problem-solving abilities;
-          <br class="lg:hidden" /><br class="lg:hidden" />
           bridging the technological gap between our society and the global
           community in the long run.
         </p>
