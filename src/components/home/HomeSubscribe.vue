@@ -28,6 +28,13 @@
           frameborder="0"
           scrolling="no"
         ></iframe>
+        <p
+          v-if="successful"
+          data-aos="fade-up"
+          class="text-green-600 bg-green-50 border border-green-800 p-4 rounded-md"
+        >
+          {{ message }}
+        </p>
       </div>
     </div>
   </div>
@@ -37,12 +44,15 @@
 export default {
   data() {
     return {
-      input: "",
+      message: "You've successfully Subscribed! 🎉",
+      successful: false,
     };
   },
   methods: {
-    submitted() {
-      this.input = "";
+    subscribed() {
+      setTimeout(() => {
+        this.successful = true;
+      }, 1000);
     },
   },
 };
