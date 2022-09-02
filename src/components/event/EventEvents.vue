@@ -49,22 +49,22 @@
         >
           Past Events
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div v-for="event in events" :key="event">
             <img
-              :src="`/img/${event.src}`"
+              :src="event.picture"
               alt="event-01"
               class="h-[300px] w-full object-cover mb-5"
             />
             <p class="text-sm flex items-center gap-1.5 mb-1">
               <span class="mdi mdi-circle text-[8px] text-primary"></span>
-              <span>{{ event.metadata }}</span>
+              <span>{{ event.tag }}</span>
             </p>
-            <p class="font-bold text-2xl uppercase mb-5">{{ event.title }}</p>
-            <p class="font-bold text-lg uppercase mb-5">{{ event.content }}</p>
-            <a :href="event.link" class="text-primary font-semibold"
-              >Read More</a
-            >
+            <p class="font-bold text-2xl uppercase mb-5">{{ event.event }}</p>
+            <p class="font-semibold text-lg mb-5">
+              {{ truncateText(event.summary) }}
+            </p>
+            <a href="#" class="text-primary font-semibold">Read More</a>
           </div>
         </div>
       </div>
@@ -76,33 +76,25 @@
 export default {
   data() {
     return {
-      events: [
-        {
-          src: "event-01.png",
-          title: "LAFHA",
-          content:
-            "The july bootcamp some important inform here. We are doing blaalab d=sheep is right here",
-          metadata: "Outreach",
-          link: "#",
-        },
-        {
-          src: "event-02.png",
-          title: "Jouney Down the Streets",
-          content:
-            "The july bootcamp some important inform here. We are doing blaalab d=sheep is right here",
-          metadata: "Outreach",
-          link: "#",
-        },
-        {
-          src: "obj-02.png",
-          title: "July Bootcamp",
-          content:
-            "The july bootcamp some important inform here. We are doing blaalab d=sheep is right here",
-          metadata: "Bootcamp",
-          link: "#",
-        },
-      ],
+      events: [],
     };
+  },
+  methods: {
+    async getEvents() {
+      try {
+        const response = await fetch(`${import.meta.env.VITE_BASE_URL}`);
+        const data = await response.json();
+        this.events = data.events;
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    truncateText(value) {
+      return value.substring(0, 150) + "...";
+    },
+  },
+  mounted() {
+    this.getEvents();
   },
 };
 </script>

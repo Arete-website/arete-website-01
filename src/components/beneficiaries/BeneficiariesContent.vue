@@ -46,8 +46,7 @@ export default {
       slides: [
         {
           title: "Our learners",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar at mauris quis blandit faucibus quis tempus. Amet diam tempus amet, massa ultrices. Parturient mi, ullamcorper diam in dolor pellentesque sagittis ultricies justo. ",
+          content: "Arete focuses on educating children and youths.",
           src: "beneficiary-01",
           bg: "bg-[#F5F9FC]",
           reverse: true,
@@ -55,7 +54,7 @@ export default {
         {
           title: "Our Volunteers",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar at mauris quis blandit faucibus quis tempus. Amet diam tempus amet, massa ultrices. Parturient mi, ullamcorper diam in dolor pellentesque sagittis ultricies justo. ",
+            "Our volunteers are dedicated individuals who love to impact society positively.",
           src: "beneficiary-02",
           bg: "bg-[rgba(232,0,119,0.08)]",
           reverse: false,
@@ -63,7 +62,7 @@ export default {
         {
           title: "Communities and schools",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar at mauris quis blandit faucibus quis tempus. Amet diam tempus amet, massa ultrices. Parturient mi, ullamcorper diam in dolor pellentesque sagittis ultricies justo. ",
+            "We carry out outreach programs to local communities and schools.",
           src: "beneficiary-03",
           bg: "bg-[#F5F9FC]",
           reverse: true,
