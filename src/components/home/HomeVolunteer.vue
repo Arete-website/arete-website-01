@@ -4,9 +4,9 @@
       Make a child happy
     </h5>
     <p class="lg:text-lg">
-      Arete organizes annual free bootcamps to cater for underpriviledged
-      children and youths. With your donation, you can sponsor a child to get
-      acces to any of our bootcamps.
+      Arete regularly organizes free boot camps to cater to underprivileged
+      children and youths. With your donation, we can reach out to more
+      communities.
     </p>
     <a
       href="https://forms.gle/J7mqEfchsAA1eL3h6"
@@ -29,8 +29,9 @@
       Winston Churchill
     </p>
     <p class="mt-6 lg:text-lg">
-      Please help make a difference by volunteering and joining us to impact as
-      many people as possible, far and wide, in record time.
+      Do you want to make an impact in your local community via tech? Are you
+      driven toward education as a tool for self-development? If this is you,
+      sign up to volunteer for our cause.
     </p>
     <a
       href="https://forms.gle/96yLtBpT6jh3ybp68"

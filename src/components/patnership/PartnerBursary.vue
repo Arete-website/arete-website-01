@@ -9,12 +9,12 @@
             data-aos="fade-up"
             class="text-lg lg:text-[32px] font-semibold mb-6 relative left-title-tag"
           >
-            Arete Busary
+            Arete's Busary
           </h4>
           <div data-aos="fade">
             <p class="pb-3">
-              Arete's bursary is a subset of Arete. It is set up to sponsor
-              young people's journey in technological fields by:
+              Arete's bursary is a subset of Arete, set up to sponsor young
+              people's journey in technological fields by:
             </p>
             <ul class="list-disc list-inside">
               <li class="pb-3">
@@ -27,7 +27,7 @@
               target="_blank"
               class="bg-primary text-white rounded-md py-4 mt-[24px] font-semibold btn w-[208px] text-center inline-block"
             >
-              Donate To Busary</a
+              Donate to the bursary</a
             >
           </div>
         </div>

@@ -12,7 +12,7 @@
       </h1>
       <button
         class="bg-primary text-white rounded-md px-12 py-4 mt-[24px] font-semibold btn md:px-0 md:w-[208px]"
-        @click="$router.push({ name: 'about' })"
+        @click="$router.push({ name: 'partnership' })"
         data-aos="fade"
         data-aos-delay="500"
       >

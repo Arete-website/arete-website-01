@@ -77,6 +77,7 @@ export default {
           name: "volunteer",
           path: "https://forms.gle/96yLtBpT6jh3ybp68",
           outsideLink: true,
+          target: "_blank",
         },
       ],
       show: false,

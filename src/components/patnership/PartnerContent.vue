@@ -5,9 +5,7 @@
         <h2
           data-aos="fade-up"
           class="text-2xl lg:text-4xl font-bold mb-14 md:w-[575px] relative left-title-tag"
-        >
-          Help Arete To Reach Out To A Larger Audience.
-        </h2>
+        ></h2>
         <div
           class="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-10 mt-12 lg:text-lg text-[rgba(20,20,20,0.62)]"
         >
@@ -31,7 +29,12 @@
             {{ card.title }}
           </h3>
           <p>{{ card.content }}</p>
-          <a href="#" class="font-semibold text-primary mt-[41px]">View More</a>
+          <a
+            :href="`${card.link}`"
+            target="_blank"
+            class="font-semibold text-primary mt-[41px]"
+            >View More</a
+          >
         </div>
       </div>
     </div>
@@ -46,22 +49,22 @@ export default {
         {
           title: "Partnership with organizations",
           content:
-            "Arete leverages the support of organizations and individuals to support our mission of providing soft skills to children and students. We've partnered with various nonprofit organizations and schools to offer soft skills training at a reduced cost.",
+            "Arete partners with non-profits, corporate bodies and indivduals to support her mission. Arete has partnered with various non-profit organizations and schools to offer digital and soft skills training.",
         },
         {
           title: "Become an Arete Sponsor",
           content:
-            "For Arete, your support goes a long way. We look forward to the partnership and sponsorships from organizations, companies, and people in other provide quality services for our young learners and volunteers.",
+            "For Arete, your support goes a long way. We look forward to working with and receiving support from organizations, companies, and individuals to provide quality services for our young learners and volunteers.",
         },
         {
           title: "A common vision",
           content:
-            "Join Arete with a shared vision by supporting our yearly Bootcamps, outreaches, and training. Help Arete to extend its opportunities to more children and students by supporting our vision.",
+            "Among the Arete team, giving back to society is our shared vision. We look forward to working with like-minded individuals to create an impact in the lives of young people through technology.",
         },
         {
           title: "Lend your skills",
           content:
-            "Impact thousands of learners by lending your skills to the community and offering to become an Arete volunteer. Volunteers have access to free training sessions on every soft skill training Arete offers.",
+            "Impact thousands of learners by lending your skills to the community and offering to become an Arete volunteer. Volunteers have access to free training sessions on every skill training Arete offers.",
         },
       ],
       cards: [
@@ -70,18 +73,21 @@ export default {
           content:
             "Partner with Arete by Volunteering to be a part of our community and lending your talents to society.",
           src: "icon-01.svg",
+          link: "https://forms.gle/TChp9htYvJfK4Xpq7",
         },
         {
           title: "Sponsorship",
           content:
             "Sponsor arete by partering with us and helping to reach out to a larger audience via our outreaches and bootcamps.",
           src: "icon-02.svg",
+          link: "https://forms.gle/a3Dvi1JfjXh1jLsH7",
         },
         {
           title: "Donation",
           content:
             "You can make make donations to futher a childs soft skills journey by donating to Arete or sponsor a youth who is in need via Arete Busaries.",
           src: "icon-03.svg",
+          link: "https://forms.gle/a3Dvi1JfjXh1jLsH7",
         },
       ],
     };
