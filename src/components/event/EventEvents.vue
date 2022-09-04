@@ -67,7 +67,12 @@
                 <p class="font-semibold text-lg mb-5">
                   {{ event.summary }}
                 </p>
-                <a :href="`${event.more}`" class="text-primary font-semibold">Read More</a>
+                <a
+                  :href="event.more"
+                  target="_blank"
+                  class="text-primary font-semibold"
+                  >Read More</a
+                >
               </div>
             </slide>
             <template #addons>
