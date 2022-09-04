@@ -11,21 +11,15 @@
           <img src="/img/obj-02.png" alt="obj-02" />
           <div>
             <p class="text-primary font-semibold text-xl md:text-3xl mb-1.5">
-              Summer Bootcamp
+              Watch this space
             </p>
-            <p class="text-[rgba(20,20,20,0.63)] font-semibold text-xl mb-4">
-              Theme: Love and light
-            </p>
-            <p class="text-[rgba(51,51,51,0.6)] text-lg">
-              We believe that teaching and equipping children with programming
-              and soft skills will improve their typing, critical thinking, and
-              problem-solving abilities.
-            </p>
+            <p
+              class="text-[rgba(20,20,20,0.63)] font-semibold text-xl mb-4"
+            ></p>
+            <p class="text-[rgba(51,51,51,0.6)] text-lg"></p>
             <hr class="my-4" />
-            <p class="font-semibold text-lg mb-4">Registration Fee [Amount]</p>
-            <p class="text-[rgba(20,20,20,0.63)] font-semibold text-xl">
-              Registration starts on Date and ends on Date
-            </p>
+            <p class="font-semibold text-lg mb-4"></p>
+            <p class="text-[rgba(20,20,20,0.63)] font-semibold text-xl"></p>
             <div
               class="flex flex-col justify-center md:justify-start md:flex-row gap-4 items-center mt-4"
             >
@@ -71,9 +65,9 @@
                   {{ event.event }}
                 </p>
                 <p class="font-semibold text-lg mb-5">
-                  {{ truncateText(event.summary) }}
+                  {{ event.summary }}
                 </p>
-                <a href="#" class="text-primary font-semibold">Read More</a>
+                <a :href="`${event.more}`" class="text-primary font-semibold">Read More</a>
               </div>
             </slide>
             <template #addons>
