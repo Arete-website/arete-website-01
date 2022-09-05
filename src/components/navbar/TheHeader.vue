@@ -14,23 +14,27 @@
           <ul
             class="block text-center lg:flex lg:space-x-6 lg:m-0 lg:items-center"
           >
-            <li
-              class="mb-4 lg:m-0 mt-10 transition-all duration-500 ease-in-out hover:text-[#1d1d1d] lg:underline-effect"
-              v-for="(route, index) in routes"
-              :key="index"
-              :class="{
-                'text-[#1d1d1d] lg:text-current lg:border-b-4 border-b-primary':
-                  active === route.path,
-                'bg-white text-primary border border-primary font-semibold w-[200px] m-auto btn hover:after:w-0 hover:text-white hover:bg-primary py-2 rounded-md':
-                  route.outsideLink,
-              }"
-            >
-              <a :href="route.path" target="_blank" v-if="route.outsideLink">{{
-                route.name
-              }}</a>
-              <router-link :to="{ name: route.path }" v-else>{{
-                route.name
-              }}</router-link>
+            <li v-for="(route, index) in routes" :key="index">
+              <a
+                :class="{
+                  'inline-block bg-white text-primary border border-primary font-semibold w-[200px] m-auto btn hover:after:w-0 hover:text-white hover:bg-primary py-2 rounded-md':
+                    route.outsideLink,
+                }"
+                :href="route.path"
+                target="_blank"
+                v-if="route.outsideLink"
+                >{{ route.name }}</a
+              >
+              <router-link
+                class="inline-block mb-8 lg:m-0 transition-all duration-500 ease-in-out hover:text-[#1d1d1d] lg:underline-effect"
+                :class="{
+                  'text-[#1d1d1d] lg:text-current lg:border-b-4 border-b-primary':
+                    active === route.path,
+                }"
+                :to="{ name: route.path }"
+                v-else
+                >{{ route.name }}</router-link
+              >
             </li>
           </ul>
         </nav>

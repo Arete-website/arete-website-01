@@ -57,7 +57,7 @@
             v-if="events.length"
           >
             <slide v-for="event in events" :key="event">
-              <div class="text-left md:mr-4">
+              <div class="text-left md:mx-4">
                 <img
                   :src="event.picture"
                   alt="event-01"
@@ -73,7 +73,12 @@
                 <p class="font-semibold text-lg mb-5">
                   {{ truncateText(event.summary) }}
                 </p>
-                <a href="#" class="text-primary font-semibold">Read More</a>
+                <a
+                  :href="event.more"
+                  target="_blank"
+                  class="text-primary font-semibold"
+                  >Read More</a
+                >
               </div>
             </slide>
             <template #addons>
