@@ -8,7 +8,7 @@
           Upcoming Event
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/img/obj-02.png" alt="obj-02" />
+          <img src="/img/Arete-next-event.png" alt="obj-02" />
           <div>
             <p class="text-primary font-semibold text-xl md:text-3xl mb-1.5">
               Watch this space
