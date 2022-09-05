@@ -51,7 +51,7 @@
             v-if="events.length"
           >
             <slide v-for="event in events" :key="event">
-              <div class="text-left md:mr-4">
+              <div class="text-left md:mx-4">
                 <img
                   :src="event.picture"
                   alt="event-01"
