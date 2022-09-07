@@ -18,7 +18,7 @@
             <img
               :src="`/img/${benefactor.src}`"
               alt="benefactor"
-              class="mb-6 w-[100px] h-[100px]"
+              class="mb-6 w-[100px] h-[100px] rounded-full"
             />
             <p class="mb-4">
               {{ benefactor.content }}
@@ -69,7 +69,7 @@ export default {
           name: "Sofiyyah (JDTS)",
           content:
             "Arete organized a basic tech training for the kids in the slum where we visited October, 2021. The training was well detailed and explanatory, in fact we had a few of the kids in the slums practice what they were taught immediately after the training. It was quite insightful.",
-          src: "benefactor-03.svg",
+          src: "next-event.png",
         },
       ],
     };
