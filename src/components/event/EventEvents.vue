@@ -7,22 +7,31 @@
         >
           Upcoming Event
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-          <img src="/img/next-event.png" alt="obj-02" />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 1xl:gap-[78px]">
+          <img
+            src="/img/next-event.png"
+            alt="obj-02"
+            class="lg:w-[500px] lg:h-[400px] w-full"
+          />
           <div>
-            <p
-              class="text-primary uppercase text-center font-bold text-xl md:text-3xl mb-1.5"
-            >
-              Watch this space!!!
+            <p class="text-primary font-semibold text-xl md:text-3xl mb-1.5">
+              October Outreach
             </p>
             <p
               class="text-[rgba(20,20,20,0.63)] font-semibold text-xl mb-4"
             ></p>
-            <!-- <p class="text-[rgba(51,51,51,0.6)] text-lg"></p>
+            <p class="text-[rgba(51,51,51,0.6)] text-lg"></p>
             <hr class="my-4" />
             <p class="font-semibold text-lg mb-4"></p>
-            <p class="text-[rgba(20,20,20,0.63)] font-semibold text-xl"></p>
-            <div
+            <p class="text-[rgba(20,20,20,0.63)] font-semibold text-xl">
+              Partner: Journey Down The Street
+            </p>
+            <p
+              class="text-[rgba(20,20,20,0.53)] font-semibold text-xl lg:text-3xl uppercase mt-8"
+            >
+              Watch this space
+            </p>
+            <!-- <div
               class="flex flex-col justify-center md:justify-start md:flex-row gap-4 items-center mt-4"
             >
               <button
