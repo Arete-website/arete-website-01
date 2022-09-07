@@ -24,7 +24,6 @@
               {{ benefactor.content }}
             </p>
             <p class="text-xl mb-1">{{ benefactor.name }}</p>
-            <p class="text-xl">Volunteer</p>
           </div>
         </slide>
         <template #addons>
@@ -64,6 +63,12 @@ export default {
           name: "Eunice Edeoghon",
           content:
             "Arete gave me an opportunity to work closely with kids, that is something I always wanted to do. Also, I got the opportunity to handle their social media pages for a period of time. That helped me develop my graphics design and PR skills as well.",
+          src: "benefactor-03.svg",
+        },
+        {
+          name: "Sofiyyah (JDTS)",
+          content:
+            "Arete organized a basic tech training for the kids in the slum where we visited October, 2021. The training was well detailed and explanatory, in fact we had a few of the kids in the slums practice what they were taught immediately after the training. It was quite insightful.",
           src: "benefactor-03.svg",
         },
       ],
