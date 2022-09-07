@@ -7,16 +7,18 @@
         >
           Upcoming Event
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/img/Arete-next-event.png" alt="obj-02" />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+          <img src="/img/next-event.png" alt="obj-02" />
           <div>
-            <p class="text-primary font-semibold text-xl md:text-3xl mb-1.5">
-              Watch this space
+            <p
+              class="text-primary uppercase text-center font-bold text-xl md:text-3xl mb-1.5"
+            >
+              Watch this space!!!
             </p>
             <p
               class="text-[rgba(20,20,20,0.63)] font-semibold text-xl mb-4"
             ></p>
-            <p class="text-[rgba(51,51,51,0.6)] text-lg"></p>
+            <!-- <p class="text-[rgba(51,51,51,0.6)] text-lg"></p>
             <hr class="my-4" />
             <p class="font-semibold text-lg mb-4"></p>
             <p class="text-[rgba(20,20,20,0.63)] font-semibold text-xl"></p>
@@ -33,7 +35,7 @@
               >
                 Partner
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

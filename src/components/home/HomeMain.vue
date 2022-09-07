@@ -1,6 +1,6 @@
 <template>
   <div
-    class="routes h-[calc(100vh-78px)] flex items-center justify-center w-full bg-[url('/img/mobile-bg.svg')] md:bg-[url('/img/desktop-bg.svg')] bg-no-repeat bg-center bg-cover relative main-bg"
+    class="routes h-[calc(100vh-78px)] flex items-center justify-center w-full bg-[url('/img/desktop-bg.jpg')] bg-no-repeat bg-center bg-cover relative main-bg"
   >
     <div class="container text-center z-10">
       <h1
