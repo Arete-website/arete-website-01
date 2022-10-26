@@ -5,7 +5,7 @@
         <h2
           class="bg-[#F5F9FC] text-[#141414] font-semibold text-2xl md:text-3xl p-3 pr-[3rem] rounded-md inline-block mb-[37px]"
         >
-          Upcoming Event
+          Ongoing Event
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 1xl:gap-[78px]">
           <img
@@ -13,7 +13,7 @@
             alt="obj-02"
             class="lg:w-[500px] lg:h-[400px] w-full"
           />
-          <div>
+          <div> 
             <p class="text-primary font-semibold text-xl md:text-3xl mb-1.5">
               October Outreach
             </p>
@@ -30,7 +30,7 @@
               class="text-[rgba(20,20,20,0.53)] font-semibold text-xl lg:text-3xl uppercase mt-8"
             >
               Watch this space
-            </p>
+            </p> 
             <!-- <div
               class="flex flex-col justify-center md:justify-start md:flex-row gap-4 items-center mt-4"
             >
